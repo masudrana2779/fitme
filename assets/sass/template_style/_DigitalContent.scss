@@ -1,4 +1,5 @@
 .DigitalContentWrap {
+    margin-bottom: 100px;
     .DigitalContentText {
         .digiTalTitle {
             font-size  : 42px;
@@ -6,6 +7,7 @@
             color      : #4A4956;
             font-weight: 700;
             font-family: $nunito;
+            margin-bottom: 48px;
 
             span {
                 color: $brandColor;
@@ -17,6 +19,7 @@
             font-family: $open;
             font-size  : 24px;
             line-height: 44px;
+            margin-bottom: 50px;
 
             span {
                 color      : $brandColor;

@@ -1,0 +1,198 @@
+.fitmeFitWrap {
+    .fitTop {
+        position: relative;
+        h6 {
+            color      : #4A4956;
+            font-family: $open;
+            font-size  : 22px;
+            font-weight: 700;
+            line-height: 66px;
+        }
+
+        h4 {
+            font-size  : 42px;
+            font-family: $nunito;
+            font-weight: 700;
+            line-height: 69px;
+            color      : $brandColor;
+        }
+
+        p {
+            font-family: $open;
+            font-size  : 22px;
+            line-height: 67px;
+            color      : #4A4956;
+            font-weight: normal;
+        }
+
+        .viewMoreLink {
+            position : absolute;
+            top      : 50%;
+            transform: translateY(-50%);
+            right    : 0;
+
+            a {
+                color      : #4A4956;
+                font-size  : 22px;
+                font-family: $nunito;
+                line-height: 67px;
+                font-weight: 600;
+
+                i {
+                    color      : $brandColor;
+                    margin-left: 10px;
+                    font-style: 20px;
+                }
+            }
+        }
+    }
+}
+
+.fitTabs {
+    .tabMenu {
+        margin-bottom: 80px;
+
+        .nav {
+            .nav-item {
+                margin     : 0 50px 0 0;
+                border     : none;
+                background : transparent;
+                color      : #4A4956;
+                font-family: $nunito;
+                font-size  : 24px;
+                line-height: 66px;
+                position   : relative;
+
+                &::before {
+                    position     : absolute;
+                    content      : "";
+                    bottom       : 0;
+                    left         : 0;
+                    width        : 100%;
+                    height       : 0px;
+                    background   : $brandColor;
+                    border-radius: 50px 50px 0 0;
+                    transition   : all 0.5s;
+                }
+
+                &.active {
+                    &::before {
+                        height: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fitTabContent {
+    .tab-content {
+        .tab-pane {}
+    }
+}
+
+.tabSliderContent {
+    margin-bottom: 100px;
+
+    .physicalFitSlider {
+        .sliderItem {
+            .sliderItemInner {
+                display      : flex;
+                align-items  : center;
+                background   : #F6F6F6;
+                border-radius: 0 0 100px 0;
+                position     : relative;
+                height       : 380px;
+                z-index      : 1;
+
+                &::before {
+                    position     : absolute;
+                    content      : "";
+                    top          : 0;
+                    left         : 0;
+                    background   : linear-gradient(#FCA03F, #FD513A);
+                    width        : 240px;
+                    height       : 325px;
+                    border-radius: 0 0 100px 0;
+                    z-index      : -1;
+                }
+
+                .sliedrImg {
+                    width : 250px;
+                    margin: -170px 10px 0;
+
+                    img {
+                        max-width: 190px;
+                        width    : 100%;
+                    }
+
+                    &.img260 {
+                        margin-top: 0;
+
+                        img {
+                            max-width: 260px;
+                        }
+                    }
+                }
+
+                .sliderText {
+                    max-width: 230px;
+
+                    h3 {
+                        font-size  : 38px;
+                        font-weight: 700;
+                        font-family: $nunito;
+                        font-style : italic;
+                        color      : $brandColor;
+                        margin-bottom: 10px;
+                    }
+
+                    h5 {
+                        font-size  : 18px;
+                        font-weight: 600;
+                        font-family: $nunito;
+                        font-style : italic;
+                        color      : $brandColor;
+                    }
+
+                    p {
+                        font-size  : 20px;
+                        font-weight: 600;
+                        font-family: $nunito;
+                        font-style : italic;
+                        color      : #757482;
+                        margin-bottom: 20px;
+                    }
+
+                    .details {
+                        position: absolute;
+                        right   : 70px;
+                        bottom  : 30px;
+
+                        a {
+                            color      : #4A4956;
+                            font-style : 22px;
+                            font-family: $pop;
+                            font-weight: normal;
+                            display    : inline-block;
+
+                            i {
+                                margin-left: 10px;
+                                font-style : 20px;
+                            }
+                        }
+                    }
+                    .listTitle {
+                        li {
+                            img {
+                                max-width: 25px;
+                                width: 100%;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
