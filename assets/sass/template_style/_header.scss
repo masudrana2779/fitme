@@ -1,0 +1,48 @@
+.header {
+    box-shadow: 0 4px 8px rgba(74, 73, 86, 0.08);
+    border-radius: 0 0 60px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1081;
+    background: #fff;
+}
+
+.mainMenu {
+    .navbar-nav {
+        .nav-item {
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
+            .nav-link {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+                color: #383841;
+                font-family: $nunito;
+                .icon {
+                    display: block;
+                    img {
+                        max-width: 30px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.loginWrap {
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-family: $nunito;
+        font-weight: 700;
+        img {
+            margin-right: 10px;
+            max-width: 20px;
+            width    : 100%;
+        }
+    }
+}

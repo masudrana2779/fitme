@@ -1,0 +1,77 @@
+@charset "utf-8";
+//-----Color class style
+
+body {
+    font-family   : $nunito;
+    font-size     : 16px;
+    line-height   : 30px;
+    // background : #c3d4c1;
+}
+
+.tcolor {
+    color: $tcolor;
+}
+
+.dark {
+    color: $dark;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: $a-text-decuration;
+    color          : $a-color;
+    transition     : all 0.3s;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+.hover-color:hover {
+    color: $tcolor;
+}
+
+a:hover {
+    color          : $tcolor;
+    text-decoration: $a-text-decuration;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a.link {
+    color: $tcolor;
+}
+
+a.link:hover {
+    color: $tcolor !important;
+}
+
+ul {
+    margin    : 0;
+    padding   : 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+/* ======================================          Global style                 ==================================== */
+
+.container {
+    max-width: 1670px;
+}

@@ -1,0 +1,159 @@
+.bannerWrap {
+    padding: 70px 0;
+
+    .bannerRow {}
+}
+
+.bannerLeftContent {
+    .bannerTextSlider {
+        .bannerSliderItem {}
+    }
+}
+
+.bannerContent {
+    .bannerTitle {
+        font-size    : 48px;
+        line-height  : 65px;
+        font-family  : $nunito;
+        font-weight  : 800;
+        color        : #383841;
+        margin-bottom: 25px;
+
+        span {
+            color: $brandColor;
+        }
+    }
+
+    p {
+        font-size    : 24px;
+        line-height  : 40px;
+        font-family  : $open;
+        color        : #817F92;
+        margin-bottom: 35px;
+    }
+
+    h6 {
+        font-size  : 32px;
+        line-height: 40px;
+        font-family: $nunito;
+        color      : $brandColor;
+    }
+}
+
+.bannerRightContent {
+    .bannerVideoSlider {
+        .bannerVideoSliderItem {}
+    }
+}
+
+.bannerSliderVideo {
+    position     : relative;
+    border-radius: 4px 100px 4px 4px;
+    overflow     : hidden;
+
+    .videoImg {
+        img {}
+    }
+
+    .videoPlayIcon {
+        cursor: pointer;
+        transform: translate(50%, 50%);
+        position        : absolute;
+        bottom          : 40px;
+        right           : 30px;
+        height          : 300px;
+        width           : 300px;
+        border-radius   : 50%;
+        background-color: rgba(255, 255, 255, 0.20);
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 190px;
+            height: 190px;
+            border-radius   : 50%;
+            background-color: rgba(255, 255, 255, 0.50);
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            width: 190px;
+            height: 190px;
+            opacity: 0;
+            border-radius   : 50%;
+            background-color: rgba(255, 255, 255, 1);
+            animation: playVideoAnimation 5s linear infinite;
+            transition: all 0.5s;
+        }
+        
+        .iconInner {
+            width: 245px;
+            position: relative;
+            height: 245px;
+            border-radius   : 50%;
+            background-color: rgba(255, 255, 255, 0.30);
+            display         : flex;
+            align-items     : center;
+            justify-content : center;
+            z-index: 1;
+            img {
+                max-width: 20px;
+                width    : 100%;
+            }
+        }
+    }
+
+    .videoContent {
+        position : absolute;
+        right    : 100px;
+        top      : 50%;
+        transform: translateY(-50%);
+        max-width: 230px;
+        width    : 100%;
+
+        .videoLogo {
+            margin-bottom: 22px;
+
+            img {}
+        }
+
+        .videoPara {
+            color        : #fff;
+            font-size    : 22px;
+            line-height  : 30px;
+            font-family  : $pop;
+            font-weight  : 300;
+            margin-bottom: 22px;
+        }
+
+        .knowMore {
+            a {
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                max-width      : 100px;
+                height         : 32px;
+                color          : $brandColor;
+                font-family    : $nunito;
+                font-weight    : 700;
+                font-size      : 12px;
+                border-radius  : 4px;
+                background     : #fff;
+            }
+        }
+    }
+}
+@keyframes playVideoAnimation {
+    0% {
+        opacity: 1;
+        width: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 0;
+        width: 110%;
+        height: 110%;
+    }
+}

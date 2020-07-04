@@ -1,0 +1,111 @@
+.DigitalContentWrap {
+    .DigitalContentText {
+        .digiTalTitle {
+            font-size  : 42px;
+            line-height: 65px;
+            color      : #4A4956;
+            font-weight: 700;
+            font-family: $nunito;
+
+            span {
+                color: $brandColor;
+            }
+        }
+
+        p {
+            color      : #817F92;
+            font-family: $open;
+            font-size  : 24px;
+            line-height: 44px;
+
+            span {
+                color      : $brandColor;
+                font-weight: 700;
+            }
+        }
+
+        .viewAll {
+            color      : #383841;
+            font-size  : 22px;
+            line-height: 60px;
+            font-family: $nunito;
+            font-weight: 600;
+        }
+    }
+
+    .DigitalContentVideoSliderWrap {
+        position: static;
+    }
+
+    .DigitalContentVideo {
+        position: absolute;
+        right: 0;
+        padding-right: 15px;
+        max-width: 1100px;
+        width: 100%;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background: linear-gradient(to right, #FCA03F, #FD513A);
+            border-radius: 200px 0 0 0;
+            width: 960px;
+            height: 560px;
+        }
+    }
+}
+
+.DigitalContentVideoSlider {
+    .DigitalContentSliderItem {
+        .sliderVideoImg {
+            position: relative;
+            overflow: hidden;
+            border-radius: 14px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(134, 54, 255, 0.2), rgba(151, 27, 72, 0.8));
+            }
+
+            img {
+                // border-radius: 14px;
+            }
+
+            .playIcon {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    max-width: 70px;
+                    width: 100%;
+                }
+            }
+
+            .videoCaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 0 0 45px 45px;
+                p {
+                    font-size: 20px;
+                    font-family: $nunito;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

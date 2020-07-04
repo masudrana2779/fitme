@@ -1,0 +1,119 @@
+.fitmeDegitalPlatformWrap {
+    .topSec {
+        h2 {
+            color: #383841;
+            font-family: $nunito;
+            font-size: 48px;
+            line-height: 70px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            span {
+                color: #00C2FF;
+            }
+        }
+    }
+}
+
+.fitmeDegitalPlatformRow {}
+
+.fitmeDegitalPlatformSlider {
+    .fitmeDegitalPlatformSliderItem {
+        position: relative;
+        padding: 50px 0 0 0;
+
+        .sliderInner {
+            .sliderImg {
+                position: relative;
+                margin-bottom: 50px;
+
+                img {
+                    display: inline-block;
+                    &.img300 {
+                        max-width: 300px;
+                        width    : 100%;
+                    }
+
+                    &.img200 {
+                        max-width: 200px;
+                        width    : 100%;
+                    }
+                }
+
+                .imgText {
+                    position: absolute;
+                    width     : 250px;
+                    height    : 310px;
+                    background: #FFCC00;
+                    z-index   : -1;
+                    top       : 50%;
+                    left      : 0;
+                    transform : translateY(-50%);
+
+                    &.round {
+                        &::before {
+                            // position  : absolute;
+                            // content   : "";
+                        }
+
+                        &.roundBottomRight {
+                            border-radius: 0 0 120px 0;
+                            &::before {}
+                        }
+
+                        &.roundBottomLeft {
+                            border-radius: 0 0 0 120px;
+                            left: auto;
+                            right: 0;
+                            text-align: left;
+                            background: #FF2A6B;
+                            &::before {}
+                        }
+
+                        &.roundTopRight {
+                            border-radius: 0 120px 0 0;
+                            top: 120px;
+                            left: 150px;
+                            background: #00C2FF;
+
+                            &::before {}
+                        }
+                    }
+
+                    h2 {
+                        width      : 66px;
+                        color      : #383841;
+                        font-size  : 50px;
+                        line-height: 73px;
+                        font-family: $nunito;
+                        font-weight: 700;
+                        position   : absolute;
+                        bottom     : 0;
+                        right      : 0;
+                        z-index: 1;
+                    }
+                }
+            }
+
+            .sliderContent {
+                max-width: 350px;
+                width    : 100%;
+                text-align: center;
+
+                p {
+                    font-size  : 26px;
+                    line-height: 40px;
+                    font-family: $open;
+                    font-weight: 400;
+                    color      : #817F92;
+                    margin-bottom: 30px;
+                }
+
+                .disBtn {
+                    position: relative;
+                    height: 80px;
+                    a {}
+                }
+            }
+        }
+    }
+}
