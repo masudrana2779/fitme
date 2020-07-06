@@ -1,0 +1,151 @@
+.fitLogoWrap {
+    background: url(../img/andrew-tanglao-3I2vzcmEpLU-uns.png);
+    position  : relative;
+    padding   : 70px 0;
+
+    &::before {
+        position  : absolute;
+        content   : "";
+        top       : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 100%;
+        background: linear-gradient(to left, #FC9E3B, #FE5C47);
+        opacity   : .91;
+    }
+
+    .fitTOP {
+        h4 {
+            font-size    : 42px;
+            font-family  : $nunito;
+            line-height  : 65px;
+            font-weight  : 600;
+            color        : #fff;
+            margin-bottom: 70px;
+        }
+    }
+}
+
+.logoSlider {
+    .logoSliderItem {
+        .sliderImg {
+            text-align: center;
+
+            img {
+                display  : inline-block;
+                max-width: 125px;
+                width    : 100%;
+                margin   : 0 auto;
+            }
+        }
+    }
+}
+
+
+.welcomeCompWrap {
+    padding: 120px 0;
+
+    .welcomeCompImg {
+        margin-right: -50px;
+    }
+
+    .welcomeTextContent {
+        padding-left: 100px;
+
+        .secTitle {
+            margin-bottom: 50px;
+        }
+
+        .welList {
+            li {
+                list-style   : none;
+                margin-bottom: 30px;
+                font-size    : 22px;
+                font-family  : $nunito;
+                line-height  : 30px;
+                color        : #383841;
+
+                img {
+                    max-width   : 45px;
+                    width       : 100%;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}
+p {
+    font-family: $open;
+}
+.fitmeAppWrap {
+    background: rgba(252, 161, 63, 0.04);
+    padding-top: 50px;
+    margin-bottom: 50px;
+    .fitAppTextContent {
+        .secTitle {
+            margin-bottom: 50px;
+        }
+    }
+
+    .appDetailsList {
+        margin-bottom: 70px;
+
+        li {
+            list-style   : none;
+            font-size    : 22px;
+            margin-bottom: 30px;
+            font-family  : $nunito;
+            line-height  : 30px;
+            color        : #383841;
+            padding-left : 40px;
+            position     : relative;
+
+            &::before {
+                position     : absolute;
+                content      : "";
+                width        : 15px;
+                height       : 15px;
+                border-radius: 50%;
+                background   : $brandColor;
+                top          : 8px;
+                left         : 0;
+            }
+        }
+    }
+
+    .downloadLink {
+        display: flex;
+
+        a {
+            display        : flex;
+            align-items    : center;
+            width          : 175px;
+            height         : 60px;
+            justify-content: center;
+            border: 1px solid #4A4956;
+            color: #4A4956;
+            border-radius: 12px;
+            margin-right: 50px;
+            font-size    : 17px;
+            font-weight: 700;
+            font-family  : $nunito;
+            transition: all 0.5s;
+            &:last-child {
+                margin-right: 0;
+                border: 1px solid #F95C21;
+                color: #fff;
+                background: #F95C21;
+                &:hover {
+                    background: transparent;
+                    border: 1px solid #4A4956;
+                    color: #4A4956;
+                }
+            }
+            &:hover {
+                border: 1px solid #F95C21;
+                color: #fff;
+                background: #F95C21;
+            }
+        }
+    }
+}

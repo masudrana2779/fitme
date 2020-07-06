@@ -488,6 +488,15 @@ ul {
       line-height: 30px;
       color: #fff; }
 
+.secTitle h4 {
+  font-size: 42px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  line-height: 69px;
+  color: #383841; }
+  .secTitle h4 span {
+    color: #FF6F00; }
+
 .fitmeFitWrap .fitTop {
   position: relative; }
   .fitmeFitWrap .fitTop h6 {
@@ -496,12 +505,6 @@ ul {
     font-size: 22px;
     font-weight: 700;
     line-height: 66px; }
-  .fitmeFitWrap .fitTop h4 {
-    font-size: 42px;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    line-height: 69px;
-    color: #FF6F00; }
   .fitmeFitWrap .fitTop p {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
@@ -548,9 +551,11 @@ ul {
       border-radius: 50px 50px 0 0;
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      opacity: 0; }
     .fitTabs .tabMenu .nav .nav-item.active::before {
-      height: 6px; }
+      height: 6px;
+      opacity: 1; }
 
 .tabSliderContent {
   margin-bottom: 100px; }
@@ -598,6 +603,13 @@ ul {
         font-style: italic;
         color: #FF6F00;
         margin-bottom: 10px; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h4 {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #FF6F00;
+        margin-bottom: 10px; }
       .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h5 {
         font-size: 18px;
         font-weight: 600;
@@ -624,7 +636,143 @@ ul {
           .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a i {
             margin-left: 10px;
             font-style: 20px; }
-      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li img {
-        max-width: 25px;
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #757482; }
+        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li img {
+          max-width: 18px;
+          width: 100%;
+          opacity: 0.5;
+          margin-right: 10px; }
+
+.fitLogoWrap {
+  background: url(../img/andrew-tanglao-3I2vzcmEpLU-uns.png);
+  position: relative;
+  padding: 70px 0; }
+  .fitLogoWrap::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(#FC9E3B), to(#FE5C47));
+    background: -webkit-linear-gradient(right, #FC9E3B, #FE5C47);
+    background: -o-linear-gradient(right, #FC9E3B, #FE5C47);
+    background: linear-gradient(to left, #FC9E3B, #FE5C47);
+    opacity: .91; }
+  .fitLogoWrap .fitTOP h4 {
+    font-size: 42px;
+    font-family: "Nunito", sans-serif;
+    line-height: 65px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 70px; }
+
+.logoSlider .logoSliderItem .sliderImg {
+  text-align: center; }
+  .logoSlider .logoSliderItem .sliderImg img {
+    display: inline-block;
+    max-width: 125px;
+    width: 100%;
+    margin: 0 auto; }
+
+.welcomeCompWrap {
+  padding: 120px 0; }
+  .welcomeCompWrap .welcomeCompImg {
+    margin-right: -50px; }
+  .welcomeCompWrap .welcomeTextContent {
+    padding-left: 100px; }
+    .welcomeCompWrap .welcomeTextContent .secTitle {
+      margin-bottom: 50px; }
+    .welcomeCompWrap .welcomeTextContent .welList li {
+      list-style: none;
+      margin-bottom: 30px;
+      font-size: 22px;
+      font-family: "Nunito", sans-serif;
+      line-height: 30px;
+      color: #383841; }
+      .welcomeCompWrap .welcomeTextContent .welList li img {
+        max-width: 45px;
         width: 100%;
-        margin-right: 10px; }
+        margin-right: 40px; }
+
+p {
+  font-family: "Open Sans", sans-serif; }
+
+.fitmeAppWrap {
+  background: rgba(252, 161, 63, 0.04);
+  padding-top: 50px;
+  margin-bottom: 50px; }
+  .fitmeAppWrap .fitAppTextContent .secTitle {
+    margin-bottom: 50px; }
+  .fitmeAppWrap .appDetailsList {
+    margin-bottom: 70px; }
+    .fitmeAppWrap .appDetailsList li {
+      list-style: none;
+      font-size: 22px;
+      margin-bottom: 30px;
+      font-family: "Nunito", sans-serif;
+      line-height: 30px;
+      color: #383841;
+      padding-left: 40px;
+      position: relative; }
+      .fitmeAppWrap .appDetailsList li::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #FF6F00;
+        top: 8px;
+        left: 0; }
+  .fitmeAppWrap .downloadLink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .fitmeAppWrap .downloadLink a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 175px;
+      height: 60px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border: 1px solid #4A4956;
+      color: #4A4956;
+      border-radius: 12px;
+      margin-right: 50px;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: "Nunito", sans-serif;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .fitmeAppWrap .downloadLink a:last-child {
+        margin-right: 0;
+        border: 1px solid #F95C21;
+        color: #fff;
+        background: #F95C21; }
+        .fitmeAppWrap .downloadLink a:last-child:hover {
+          background: transparent;
+          border: 1px solid #4A4956;
+          color: #4A4956; }
+      .fitmeAppWrap .downloadLink a:hover {
+        border: 1px solid #F95C21;
+        color: #fff;
+        background: #F95C21; }
+
+.footerWrap {
+  background: url(../../img/4993.png); }
+
+.footerBottom {
+  background: #2F2F37; }
+  .footerBottom .copyRight p {
+    color: #fff; }

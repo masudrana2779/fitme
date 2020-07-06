@@ -1,20 +1,28 @@
+.secTitle {
+
+    h4 {
+        font-size  : 42px;
+        font-family: $nunito;
+        font-weight: 700;
+        line-height: 69px;
+        color      : #383841;
+
+        span {
+            color: $brandColor;
+        }
+    }
+}
+
 .fitmeFitWrap {
     .fitTop {
         position: relative;
+
         h6 {
             color      : #4A4956;
             font-family: $open;
             font-size  : 22px;
             font-weight: 700;
             line-height: 66px;
-        }
-
-        h4 {
-            font-size  : 42px;
-            font-family: $nunito;
-            font-weight: 700;
-            line-height: 69px;
-            color      : $brandColor;
         }
 
         p {
@@ -41,7 +49,7 @@
                 i {
                     color      : $brandColor;
                     margin-left: 10px;
-                    font-style: 20px;
+                    font-style : 20px;
                 }
             }
         }
@@ -73,21 +81,17 @@
                     background   : $brandColor;
                     border-radius: 50px 50px 0 0;
                     transition   : all 0.5s;
+                    opacity: 0;
                 }
 
                 &.active {
                     &::before {
                         height: 6px;
+                        opacity: 1;
                     }
                 }
             }
         }
-    }
-}
-
-.fitTabContent {
-    .tab-content {
-        .tab-pane {}
     }
 }
 
@@ -139,11 +143,20 @@
                     max-width: 230px;
 
                     h3 {
-                        font-size  : 38px;
-                        font-weight: 700;
-                        font-family: $nunito;
-                        font-style : italic;
-                        color      : $brandColor;
+                        font-size    : 38px;
+                        font-weight  : 700;
+                        font-family  : $nunito;
+                        font-style   : italic;
+                        color        : $brandColor;
+                        margin-bottom: 10px;
+                    }
+
+                    h4 {
+                        font-size    : 24px;
+                        font-weight  : 700;
+                        font-family  : $nunito;
+                        font-style   : italic;
+                        color        : $brandColor;
                         margin-bottom: 10px;
                     }
 
@@ -156,11 +169,11 @@
                     }
 
                     p {
-                        font-size  : 20px;
-                        font-weight: 600;
-                        font-family: $nunito;
-                        font-style : italic;
-                        color      : #757482;
+                        font-size    : 20px;
+                        font-weight  : 600;
+                        font-family  : $nunito;
+                        font-style   : italic;
+                        color        : #757482;
                         margin-bottom: 20px;
                     }
 
@@ -182,11 +195,19 @@
                             }
                         }
                     }
+
                     .listTitle {
                         li {
+                            font-size  : 16px;
+                            font-weight: 400;
+                            font-family: $nunito;
+                            font-style : italic;
+                            color      : #757482;
+
                             img {
-                                max-width: 25px;
-                                width: 100%;
+                                max-width   : 18px;
+                                width       : 100%;
+                                opacity     : 0.5;
                                 margin-right: 10px;
                             }
                         }
