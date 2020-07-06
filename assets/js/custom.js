@@ -29,7 +29,7 @@ $(document).ready(function () {
     }
     // fitmeDegitalPlatformSlider();
 
-    function DigitalContentVideoSlider(){
+    function DigitalContentVideoSlider() {
         $(".DigitalContentVideoSlider").slick({
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -39,21 +39,51 @@ $(document).ready(function () {
             dots: false,
             focusOnSelect: true,
             responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                    }
                 }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1,
-                }
-            }
             ]
         });
     }
     DigitalContentVideoSlider();
+
+
+    function clientSlider() {
+        $(".clientSlider").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 1500,
+            arrows: true,
+            dots: false,
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+    clientSlider();
 });

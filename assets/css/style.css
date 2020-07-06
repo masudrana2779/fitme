@@ -705,8 +705,7 @@ p {
 
 .fitmeAppWrap {
   background: rgba(252, 161, 63, 0.04);
-  padding-top: 50px;
-  margin-bottom: 50px; }
+  padding-top: 50px; }
   .fitmeAppWrap .fitAppTextContent .secTitle {
     margin-bottom: 50px; }
   .fitmeAppWrap .appDetailsList {
@@ -769,10 +768,177 @@ p {
         color: #fff;
         background: #F95C21; }
 
+.ourclientReviewWrap {
+  padding: 120px 0 150px; }
+  .ourclientReviewWrap .clientSlider .slick-arrow {
+    width: 40px;
+    height: 30px;
+    z-index: 1;
+    top: auto;
+    bottom: 0; }
+    .ourclientReviewWrap .clientSlider .slick-arrow::before {
+      display: none; }
+  .ourclientReviewWrap .clientSlider .slick-prev {
+    background: url(../img/arrowLeft.png) no-repeat scroll center center/35px auto;
+    left: auto;
+    right: 60px; }
+  .ourclientReviewWrap .clientSlider .slick-next {
+    background: url(../img/arrowRight.png) no-repeat scroll center center/35px auto;
+    right: 0; }
+  .ourclientReviewWrap .clientSlider .sliderItem {
+    position: relative;
+    padding: 20px;
+    padding-top: 30px; }
+
+.clientImg .imgInner {
+  position: relative;
+  display: inline-block; }
+  .clientImg .imgInner .clientMainImg {
+    border-radius: 0 0 120px 0; }
+  .clientImg .imgInner .shape {
+    position: absolute; }
+    .clientImg .imgInner .shape.shape1 {
+      right: -70px;
+      bottom: -40px; }
+    .clientImg .imgInner .shape.shape2 {
+      top: -20px;
+      left: -20px; }
+    .clientImg .imgInner .shape.shape3 {
+      top: -20px;
+      right: -20px; }
+    .clientImg .imgInner .shape.shape4 {
+      bottom: -40px;
+      left: -20px; }
+
+.clientSayContent {
+  position: relative; }
+  .clientSayContent .shpeRight {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .clientSayContent h5 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4A4956; }
+    .clientSayContent h5 span {
+      color: #FF6F00; }
+  .clientSayContent h3 {
+    color: #383841;
+    font-family: "Nunito", sans-serif;
+    font-size: 42px;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .clientSayContent .sayContent {
+    position: relative;
+    padding-left: 90px; }
+    .clientSayContent .sayContent .comma {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .clientSayContent .sayContent .content {
+      max-width: 580px;
+      width: 100%; }
+      .clientSayContent .sayContent .content p {
+        color: #757482;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 40px; }
+      .clientSayContent .sayContent .content h4 {
+        color: #383841;
+        font-family: "Nunito", sans-serif;
+        font-size: 26px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 10px; }
+      .clientSayContent .sayContent .content h6 {
+        color: #757482;
+        font-family: "Nunito", sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400; }
+
 .footerWrap {
-  background: url(../../img/4993.png); }
+  background: url(../img/4993.png) no-repeat scroll top left/cover;
+  position: relative; }
+  .footerWrap::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #383841;
+    opacity: .95; }
+  .footerWrap .footerTop {
+    padding: 85px 0 70px; }
+
+.footerLeftContent .footerLogo {
+  margin-bottom: 30px; }
+
+.footerLeftContent .footerContent p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  max-width: 485px;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.footerLeftContent .footerContent .learnMore a {
+  display: inline-block;
+  color: #FF6F00;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px; }
+  .footerLeftContent .footerContent .learnMore a i {
+    margin-left: 10px;
+    font-size: 20px; }
+
+.footerItem .footerTitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 45px; }
+
+.footerItem .footerMune li {
+  margin-bottom: 5px; }
+  .footerItem .footerMune li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff; }
+
+.footerItem .footerContact p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  margin-bottom: 25px; }
+  .footerItem .footerContact p i {
+    margin-right: 25px;
+    color: #FF6F00; }
 
 .footerBottom {
-  background: #2F2F37; }
+  background: #2F2F37;
+  padding: 30px 0; }
   .footerBottom .copyRight p {
     color: #fff; }
+  .footerBottom .foogterSocial li {
+    margin-right: 25px; }
+    .footerBottom .foogterSocial li:last-child {
+      margin-right: 0; }

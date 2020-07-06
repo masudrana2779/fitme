@@ -1,0 +1,156 @@
+.ourclientReviewWrap {
+    padding: 120px 0 150px;
+
+    .clientSlider {
+        .slick-arrow {
+            width  : 40px;
+            height : 30px;
+            z-index: 1;
+            top: auto;
+            bottom: 0;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .slick-prev,
+        .slick-next {}
+
+        .slick-prev {
+            background: url(../img/arrowLeft.png) no-repeat scroll center center / 35px auto;
+            left      : auto;
+            right     : 60px;
+        }
+
+        .slick-next {
+            background: url(../img/arrowRight.png) no-repeat scroll center center / 35px auto;
+            right     : 0;
+        }
+
+        .sliderItem {
+            position   : relative;
+            padding: 20px;
+            padding-top: 30px;
+        }
+    }
+}
+
+.clientImg {
+    .imgInner {
+        position: relative;
+        display : inline-block;
+
+        .clientMainImg {
+            border-radius: 0 0 120px 0;
+        }
+
+        .shape {
+            position: absolute;
+
+            &.shape1 {
+                right : -70px;
+                bottom: -40px;
+
+                img {}
+            }
+
+            &.shape2 {
+                top : -20px;
+                left: -20px;
+
+                img {}
+            }
+
+            &.shape3 {
+                top  : -20px;
+                right: -20px;
+
+                img {}
+            }
+
+            &.shape4 {
+                bottom: -40px;
+                left  : -20px;
+
+                img {}
+            }
+        }
+    }
+}
+
+.clientSayContent {
+    position: relative;
+
+    .shpeRight {
+        position: absolute;
+        top     : 0;
+        right   : 0;
+
+        img {}
+    }
+
+    h5 {
+        font-family: $open;
+        font-weight: 400;
+        font-size  : 18px;
+        color      : #4A4956;
+
+        span {
+            color: $brandColor;
+        }
+    }
+
+    h3 {
+        color        : #383841;
+        font-family  : $nunito;
+        font-size    : 42px;
+        line-height  : 65px;
+        font-weight  : 700;
+        margin-bottom: 30px;
+    }
+
+    .sayContent {
+        position    : relative;
+        padding-left: 90px;
+
+        .comma {
+            position: absolute;
+            top     : 0;
+            left    : 0;
+
+            img {}
+        }
+
+        .content {
+            max-width: 580px;
+            width    : 100%;
+
+            p {
+                color        : #757482;
+                font-family  : $open;
+                font-weight  : 400;
+                font-size    : 24px;
+                line-height  : 40px;
+                margin-bottom: 40px;
+            }
+
+            h4 {
+                color        : #383841;
+                font-family  : $nunito;
+                font-size    : 26px;
+                line-height  : 30px;
+                font-weight  : 700;
+                margin-bottom: 10px;
+            }
+
+            h6 {
+                color      : #757482;
+                font-family: $nunito;
+                font-size  : 18px;
+                line-height: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+}
