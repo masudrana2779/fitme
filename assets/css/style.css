@@ -1008,6 +1008,8 @@ p {
   .fitTabs .tabMenu .nav .nav-item {
     margin: 0 0 0 0;
     font-size: 20px; }
+  .fitmeAppWrap .downloadLink a {
+    margin-right: 20px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
     margin-bottom: 60px;
     margin-top: 0;
