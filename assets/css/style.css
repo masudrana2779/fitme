@@ -140,6 +140,9 @@ ul {
   font-family: "Nunito", sans-serif;
   color: #FCA03F; }
 
+.bannerRightContent .bannerVideoSlider {
+  margin-left: -60px; }
+
 .bannerSliderVideo {
   position: relative;
   border-radius: 4px 100px 4px 4px;
@@ -354,7 +357,7 @@ ul {
   position: absolute;
   width: 195px;
   height: 47px;
-  left: 0px;
+  left: 2px;
   top: 15.5px;
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
   -ms-transform: matrix(1, 0, 0, 1, 0, 0);
