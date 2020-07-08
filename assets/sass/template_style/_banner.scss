@@ -38,7 +38,7 @@
         font-weight  : 800;
         color        : #383841;
         margin-bottom: 25px;
-        animation    : fadeOutDown 1.4s both;
+        // animation    : fadeOutDown 1.4s both;
 
         span {
             color: $brandColor;
@@ -51,7 +51,7 @@
         font-family  : $open;
         color        : #817F92;
         margin-bottom: 35px;
-        animation    : fadeOutDown 1.2s both;
+        // animation    : fadeOutDown 1.2s both;
     }
 
     h6 {
@@ -59,7 +59,7 @@
         line-height: 40px;
         font-family: $nunito;
         color      : #FCA03F;
-        animation  : fadeOutDown 1s both;
+        // animation  : fadeOutDown 1s both;
     }
 }
 

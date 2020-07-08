@@ -1,13 +1,15 @@
 .fitmeDegitalPlatformWrap {
     margin-bottom: 200px;
+
     .topSec {
         h2 {
-            color: #383841;
-            font-family: $nunito;
-            font-size: 48px;
-            line-height: 70px;
-            font-weight: 700;
+            color        : #383841;
+            font-family  : $nunito;
+            font-size    : 48px;
+            line-height  : 70px;
+            font-weight  : 700;
             margin-bottom: 60px;
+
             span {
                 color: #00C2FF;
             }
@@ -20,15 +22,16 @@
 .fitmeDegitalPlatformSlider {
     .fitmeDegitalPlatformSliderItem {
         position: relative;
-        padding: 50px 0 0 0;
+        padding : 50px 0 0 0;
 
         .sliderInner {
             .sliderImg {
-                position: relative;
+                position     : relative;
                 margin-bottom: 50px;
 
                 img {
                     display: inline-block;
+
                     &.img300 {
                         max-width: 300px;
                         width    : 100%;
@@ -41,7 +44,7 @@
                 }
 
                 .imgText {
-                    position: absolute;
+                    position  : absolute;
                     width     : 250px;
                     height    : 310px;
                     background: #FFCC00;
@@ -58,23 +61,25 @@
 
                         &.roundBottomRight {
                             border-radius: 0 0 120px 0;
+
                             &::before {}
                         }
 
                         &.roundBottomLeft {
                             border-radius: 0 0 0 120px;
-                            left: auto;
-                            right: 0;
-                            text-align: left;
-                            background: #FF2A6B;
+                            left         : auto;
+                            right        : 0;
+                            text-align   : left;
+                            background   : #FF2A6B;
+
                             &::before {}
                         }
 
                         &.roundTopRight {
                             border-radius: 0 120px 0 0;
-                            top: 120px;
-                            left: 150px;
-                            background: #00C2FF;
+                            top          : 120px;
+                            left         : 150px;
+                            background   : #00C2FF;
 
                             &::before {}
                         }
@@ -90,32 +95,62 @@
                         position   : absolute;
                         bottom     : 0;
                         right      : 0;
-                        z-index: 1;
-                        font-style: italic;
+                        z-index    : 1;
+                        font-style : italic;
                     }
                 }
             }
 
             .sliderContent {
-                max-width: 350px;
-                width    : 100%;
+                max-width : 350px;
+                width     : 100%;
                 text-align: center;
 
                 p {
-                    font-size  : 26px;
-                    line-height: 40px;
-                    font-family: $open;
-                    font-weight: 400;
-                    color      : #817F92;
+                    font-size    : 26px;
+                    line-height  : 40px;
+                    font-family  : $open;
+                    font-weight  : 400;
+                    color        : #817F92;
                     margin-bottom: 30px;
                 }
 
                 .disBtn {
                     position: relative;
-                    height: 80px;
-                    a {}
+                    height  : 80px;
+
+                    a {
+                        transition: all 0.5s;
+
+                        svg {
+                            #Path_1111 {
+                                transition: all 0.5s;
+                            }
+                        }
+
+                        #Discover {
+                            transition: all 0.5s;
+                        }
+
+                        &:hover {
+                            svg {
+                                #Path_1111 {
+                                    fill  : $brandColor;
+                                    stroke: #fff
+                                }
+                            }
+
+                            #Discover {
+                                color: #fff;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+.slick-track {
+    width: 100%;
 }

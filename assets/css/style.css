@@ -135,9 +135,7 @@ ul {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   color: #383841;
-  margin-bottom: 25px;
-  -webkit-animation: fadeOutDown 1.4s both;
-  animation: fadeOutDown 1.4s both; }
+  margin-bottom: 25px; }
   .bannerContent .bannerTitle span {
     color: #FF6F00; }
 
@@ -146,17 +144,13 @@ ul {
   line-height: 40px;
   font-family: "Open Sans", sans-serif;
   color: #817F92;
-  margin-bottom: 35px;
-  -webkit-animation: fadeOutDown 1.2s both;
-  animation: fadeOutDown 1.2s both; }
+  margin-bottom: 35px; }
 
 .bannerContent h6 {
   font-size: 32px;
   line-height: 40px;
   font-family: "Nunito", sans-serif;
-  color: #FCA03F;
-  -webkit-animation: fadeOutDown 1s both;
-  animation: fadeOutDown 1s both; }
+  color: #FCA03F; }
 
 .bannerRightContent .bannerVideoSlider {
   margin-left: -60px; }
@@ -374,6 +368,26 @@ ul {
     .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn {
       position: relative;
       height: 80px; }
+      .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn a {
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn a svg #Path_1111 {
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn a #Discover {
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+        .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn a:hover svg #Path_1111 {
+          fill: #FF6F00;
+          stroke: #fff; }
+        .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent .disBtn a:hover #Discover {
+          color: #fff; }
+
+.slick-track {
+  width: 100%; }
 
 #Group_792 {
   position: absolute;

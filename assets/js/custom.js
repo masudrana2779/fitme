@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 
     //js for latest_news_slider
-    $('.bannerTextSlider').slick({
+    $('.No_bannerTextSlider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -38,7 +38,7 @@ $(document).ready(function () {
         autoplaySpeed: 3000,
         arrows: true,
         dots: true,
-        asNavFor: '.bannerTextSlider',
+        // asNavFor: '.bannerTextSlider',
         responsive: [
             {
                 breakpoint: 991,
@@ -84,7 +84,7 @@ $(document).ready(function () {
 
     function physicalFitSlider() {
         $(".physicalFitSlider").slick({
-            autoplay: true,
+            // autoplay: true,
             slidesToShow: 3,
             arrows: true,
             dots: false,
