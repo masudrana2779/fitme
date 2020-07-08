@@ -6,9 +6,29 @@
 
 .bannerLeftContent {
     .bannerTextSlider {
+
         .bannerSliderItem {}
+
+        .slick-active {
+            .bannerSliderItem {
+                .bannerContent {
+                    .bannerTitle {
+                        animation: fadeInDown 1s both 1s;
+                    }
+
+                    p {
+                        animation: fadeInDown 1.2s both 1.2s;
+                    }
+
+                    h6 {
+                        animation: fadeInDown 1.4s both 1.4s;
+                    }
+                }
+            }
+        }
     }
 }
+
 
 .bannerContent {
     .bannerTitle {
@@ -18,6 +38,7 @@
         font-weight  : 800;
         color        : #383841;
         margin-bottom: 25px;
+        animation    : fadeOutDown 1.4s both;
 
         span {
             color: $brandColor;
@@ -30,6 +51,7 @@
         font-family  : $open;
         color        : #817F92;
         margin-bottom: 35px;
+        animation    : fadeOutDown 1.2s both;
     }
 
     h6 {
@@ -37,13 +59,34 @@
         line-height: 40px;
         font-family: $nunito;
         color      : #FCA03F;
+        animation  : fadeOutDown 1s both;
     }
 }
 
 .bannerRightContent {
     .bannerVideoSlider {
         margin-left: -60px;
+
         .bannerVideoSliderItem {}
+        
+    }
+    
+    .slick-dots {
+        bottom: -40px;
+        li {
+            width: 11px;
+            height: 11px;
+            background: $brandColor;
+            border-radius: 50%;
+            opacity: 0.2;
+            transition: all 0.5s;
+            button {
+                display: none;
+            }
+            &.slick-active {
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -57,8 +100,8 @@
     }
 
     .videoPlayIcon {
-        cursor: pointer;
-        transform: translate(50%, 50%);
+        cursor          : pointer;
+        transform       : translate(50%, 50%);
         position        : absolute;
         bottom          : 40px;
         right           : 30px;
@@ -69,36 +112,39 @@
         display         : flex;
         align-items     : center;
         justify-content : center;
+
         &::before {
-            position: absolute;
-            content: "";
-            width: 190px;
-            height: 190px;
+            position        : absolute;
+            content         : "";
+            width           : 190px;
+            height          : 190px;
             border-radius   : 50%;
             background-color: rgba(255, 255, 255, 0.50);
         }
+
         &::after {
-            position: absolute;
-            content: "";
-            width: 190px;
-            height: 190px;
-            opacity: 0;
+            position        : absolute;
+            content         : "";
+            width           : 190px;
+            height          : 190px;
+            opacity         : 0;
             border-radius   : 50%;
             background-color: rgba(255, 255, 255, 1);
-            animation: playVideoAnimation 5s linear infinite;
-            transition: all 0.5s;
+            animation       : playVideoAnimation 5s linear infinite;
+            transition      : all 0.5s;
         }
-        
+
         .iconInner {
-            width: 245px;
-            position: relative;
-            height: 245px;
+            width           : 245px;
+            position        : relative;
+            height          : 245px;
             border-radius   : 50%;
             background-color: rgba(255, 255, 255, 0.30);
             display         : flex;
             align-items     : center;
             justify-content : center;
-            z-index: 1;
+            z-index         : 1;
+
             img {
                 max-width: 20px;
                 width    : 100%;
@@ -146,15 +192,17 @@
         }
     }
 }
+
 @keyframes playVideoAnimation {
     0% {
         opacity: 1;
-        width: 0;
-        height: 0;
+        width  : 0;
+        height : 0;
     }
+
     100% {
         opacity: 0;
-        width: 110%;
-        height: 110%;
+        width  : 110%;
+        height : 110%;
     }
 }

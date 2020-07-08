@@ -1,74 +1,71 @@
 $(document).ready(function () {
 
-    
 
-	//js for latest_news_slider
-	$('.bannerTextSlider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows: false,
-		centerMode: true,
-		centerPadding: '0px',
-		dots: false,
-		asNavFor: '.bannerVideoSlider',
-		focusOnSelect: true,
-		responsive: [
-		{
-			breakpoint: 991,
-			settings: {
-                
-			}
-		},
-		{
-			breakpoint: 640,
-			settings: {
-                arrows: false,
-			}
-		}
-		]
-	});
-   
-	//js for latest_news_slider
-	$('.bannerVideoSlider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		arrows: true,
-		dots: false,
-		asNavFor: '.bannerTextSlider',
-		responsive: [
-		{
-			breakpoint: 991,
-			settings: {
-                
-			}
-		},
-		{
-			breakpoint: 640,
-			settings: {
-                arrows: false,
-			}
-		}
-		]
-	});
+
+    //js for latest_news_slider
+    $('.bannerTextSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 1500,
+        arrows: false,
+        fade: true,
+        dots: false,
+        asNavFor: '.bannerVideoSlider',
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
+    });
+
+    //js for latest_news_slider
+    $('.bannerVideoSlider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        dots: true,
+        asNavFor: '.bannerTextSlider',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    dots: false,
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                }
+            }
+        ]
+    });
 
 
     function fitmeDegitalPlatformSlider() {
         $(".fitmeDegitalPlatformSlider").slick({
-            centerMode: true,
             autoplay: true,
-            centerPadding: '0px',
             slidesToShow: 3,
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        centerMode: true,
-                        centerPadding: '0px',
                         slidesToShow: 3
                     }
                 },
@@ -76,8 +73,6 @@ $(document).ready(function () {
                     breakpoint: 480,
                     settings: {
                         arrows: false,
-                        centerMode: true,
-                        centerPadding: '0px',
                         slidesToShow: 1
                     }
                 }
@@ -89,17 +84,15 @@ $(document).ready(function () {
 
     function physicalFitSlider() {
         $(".physicalFitSlider").slick({
-            centerMode: true,
             autoplay: true,
-            centerPadding: '0px',
             slidesToShow: 3,
+            arrows: true,
+            dots: false,
             responsive: [
                 {
                     breakpoint: 768,
                     settings: {
                         arrows: false,
-                        centerMode: true,
-                        centerPadding: '0px',
                         slidesToShow: 1
                     }
                 },
@@ -107,8 +100,6 @@ $(document).ready(function () {
                     breakpoint: 480,
                     settings: {
                         arrows: false,
-                        centerMode: true,
-                        centerPadding: '0px',
                         slidesToShow: 1
                     }
                 }
@@ -123,7 +114,7 @@ $(document).ready(function () {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 3000,
-            arrows: false,
+            arrows: true,
             dots: false,
             focusOnSelect: true,
             responsive: [
@@ -205,7 +196,7 @@ $(document).ready(function () {
     }
     logoSlider();
 
-    
+
     function popupGallery() {
         if ($('.popup-youtube').length) {
             $('.popup-youtube').magnificPopup({
