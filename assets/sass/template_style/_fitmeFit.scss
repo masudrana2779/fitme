@@ -45,11 +45,35 @@
                 font-family: $nunito;
                 line-height: 67px;
                 font-weight: 600;
+                position   : relative;
+
+                &::before {
+                    position  : absolute;
+                    content   : "";
+                    bottom    : 0;
+                    right     : 0;
+                    width     : 0;
+                    height    : 1px;
+                    background: $brandColor;
+                    opacity   : 0;
+                    transition: all 0.5s;
+                }
 
                 i {
                     color      : $brandColor;
                     margin-left: 10px;
                     font-size  : 20px;
+                }
+
+                &:hover {
+                    color: $brandColor;
+
+                    &::before {
+                        right  : auto;
+                        left   : 0;
+                        opacity: 1;
+                        width  : 100%;
+                    }
                 }
             }
         }
@@ -129,6 +153,8 @@
         .slick-next {
             background: url(../img/rightSmallArrow.png) no-repeat scroll center center / 14px auto;
             right     : 0;
+
+            // rI6qU7aN2
         }
 
         .sliderItem {
@@ -226,14 +252,37 @@
 
                         a {
                             color      : #4A4956;
-                            font-style : 22px;
+                            font-size  : 18px;
                             font-family: $pop;
                             font-weight: normal;
                             display    : inline-block;
+                            position   : relative;
+                            transition: all 0.5s;
+                            
+                            &::before {
+                                position  : absolute;
+                                content   : "";
+                                bottom    : 0;
+                                right     : 0;
+                                width     : 0;
+                                height    : 1px;
+                                background: $brandColor;
+                                opacity   : 0;
+                                transition: all 0.5s;
+                            }
 
                             i {
                                 margin-left: 10px;
                                 font-style : 20px;
+                            }
+                            &:hover {
+                                color: $brandColor;
+                                &::before {
+                                    right: auto;
+                                    left: 0;
+                                    opacity: 1;
+                                    width: 100%;
+                                }
                             }
                         }
                     }

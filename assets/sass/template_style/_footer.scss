@@ -50,6 +50,12 @@
                 i {
                     margin-left: 10px;
                     font-size  : 20px;
+                    transition: all 0.5s;
+                }
+                &:hover {
+                    i {
+                        margin-left: 15px;
+                    }
                 }
             }
         }
@@ -138,7 +144,14 @@
             }
 
             a {
-                img {}
+                img {
+                    transition: all 0.5s;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
             }
         }
     }

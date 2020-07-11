@@ -70,6 +70,12 @@ ul {
 .container {
   max-width: 1670px; }
 
+.mfp-bg {
+  z-index: 1089; }
+
+.mfp-wrap {
+  z-index: 1090; }
+
 .header {
   -webkit-box-shadow: 0 4px 8px rgba(74, 73, 86, 0.08);
   box-shadow: 0 4px 8px rgba(74, 73, 86, 0.08);
@@ -467,12 +473,33 @@ ul {
     .DigitalContentWrap .DigitalContentText p span {
       color: #FF6F00;
       font-weight: 700; }
-  .DigitalContentWrap .DigitalContentText .viewAll {
+  .DigitalContentWrap .DigitalContentText .viewAll a {
     color: #383841;
     font-size: 22px;
     line-height: 60px;
     font-family: "Nunito", sans-serif;
-    font-weight: 600; }
+    font-weight: 600;
+    display: inline-block;
+    position: relative; }
+    .DigitalContentWrap .DigitalContentText .viewAll a::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 15px;
+      width: 0;
+      height: 2px;
+      background: #FF6F00;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .DigitalContentWrap .DigitalContentText .viewAll a:hover {
+      color: #FF6F00; }
+      .DigitalContentWrap .DigitalContentText .viewAll a:hover::before {
+        width: 100%;
+        opacity: 1;
+        right: auto;
+        left: 0; }
   .DigitalContentWrap .DigitalContentVideoSliderWrap {
     position: static; }
   .DigitalContentWrap .DigitalContentVideo {
@@ -609,11 +636,31 @@ ul {
       font-size: 22px;
       font-family: "Nunito", sans-serif;
       line-height: 67px;
-      font-weight: 600; }
+      font-weight: 600;
+      position: relative; }
+      .fitmeFitWrap .fitTop .viewMoreLink a::before {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 1px;
+        background: #FF6F00;
+        opacity: 0;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
       .fitmeFitWrap .fitTop .viewMoreLink a i {
         color: #FF6F00;
         margin-left: 10px;
         font-size: 20px; }
+      .fitmeFitWrap .fitTop .viewMoreLink a:hover {
+        color: #FF6F00; }
+        .fitmeFitWrap .fitTop .viewMoreLink a:hover::before {
+          right: auto;
+          left: 0;
+          opacity: 1;
+          width: 100%; }
 
 .fitTabs .tabMenu {
   margin-bottom: 30px; }
@@ -741,13 +788,36 @@ ul {
           bottom: 30px; }
           .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a {
             color: #4A4956;
-            font-style: 22px;
+            font-size: 18px;
             font-family: "Poppins", sans-serif;
             font-weight: normal;
-            display: inline-block; }
+            display: inline-block;
+            position: relative;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
+            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a::before {
+              position: absolute;
+              content: "";
+              bottom: 0;
+              right: 0;
+              width: 0;
+              height: 1px;
+              background: #FF6F00;
+              opacity: 0;
+              -webkit-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s; }
             .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a i {
               margin-left: 10px;
               font-style: 20px; }
+            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover {
+              color: #FF6F00; }
+              .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover::before {
+                right: auto;
+                left: 0;
+                opacity: 1;
+                width: 100%; }
         .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li {
           font-size: 16px;
           font-weight: 400;
@@ -1019,7 +1089,12 @@ p {
   line-height: 30px; }
   .footerLeftContent .footerContent .learnMore a i {
     margin-left: 10px;
-    font-size: 20px; }
+    font-size: 20px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+  .footerLeftContent .footerContent .learnMore a:hover i {
+    margin-left: 15px; }
 
 .footerItem .footerTitle {
   font-family: "Nunito", sans-serif;
@@ -1088,6 +1163,14 @@ p {
     margin-right: 25px; }
     .footerBottom .foogterSocial li:last-child {
       margin-right: 0; }
+    .footerBottom .foogterSocial li a img {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+    .footerBottom .foogterSocial li a:hover img {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
 
 @media (max-width: 767px) {
   .bannerContent {

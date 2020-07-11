@@ -2,59 +2,65 @@ $(document).ready(function () {
 
 
 
-    //js for latest_news_slider
-    $('.No_bannerTextSlider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1500,
-        arrows: false,
-        fade: true,
-        dots: false,
-        asNavFor: '.bannerVideoSlider',
-        focusOnSelect: true,
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
+    //js for bannerTextSlider
+    function bannerTextSlider() {
+        $('.bannerTextSlider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            speed: 1500,
+            arrows: false,
+            fade: true,
+            dots: false,
+            asNavFor: '.bannerVideoSlider',
+            focusOnSelect: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
 
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        arrows: false,
+                    }
                 }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    arrows: false,
-                }
-            }
-        ]
-    });
+            ]
+        });
+    }
+    // bannerTextSlider();
 
-    //js for latest_news_slider
-    $('.bannerVideoSlider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true,
-        dots: true,
-        // asNavFor: '.bannerTextSlider',
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    dots: false,
+    //js for bannerVideoSlider
+    function bannerVideoSlider() {
+        $('.bannerVideoSlider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            arrows: true,
+            dots: true,
+            // asNavFor: '.bannerTextSlider',
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        dots: false,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        arrows: false,
+                        dots: false,
+                    }
                 }
-            },
-            {
-                breakpoint: 640,
-                settings: {
-                    arrows: false,
-                    dots: false,
-                }
-            }
-        ]
-    });
+            ]
+        });
+    }
+    bannerVideoSlider();
 
 
     function fitmeDegitalPlatformSlider() {
@@ -218,4 +224,13 @@ $(document).ready(function () {
         }
     }
     popupGallery();
+
+
+
+
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
 });

@@ -729,15 +729,15 @@ xclip
   overflow: hidden;
   vertical-align: top;
 }
+/* line */
 .cd-headline.clip .cd-words-wrapper::after {
-  /* line */
-  content: '';
+  /* content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 2px;
   height: 100%;
-  background-color: #aebcb9;
+  background-color: #aebcb9; */
 }
 .cd-headline.clip b {
   opacity: 0;

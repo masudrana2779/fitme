@@ -29,11 +29,38 @@
         }
 
         .viewAll {
-            color      : #383841;
-            font-size  : 22px;
-            line-height: 60px;
-            font-family: $nunito;
-            font-weight: 600;
+            a {
+                color      : #383841;
+                font-size  : 22px;
+                line-height: 60px;
+                font-family: $nunito;
+                font-weight: 600;
+                display    : inline-block;
+                position   : relative;
+
+                &::before {
+                    position  : absolute;
+                    content   : "";
+                    right     : 0;
+                    bottom    : 15px;
+                    width     : 0;
+                    height    : 2px;
+                    background: $brandColor;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
+                &:hover {
+                    color: $brandColor;
+                    
+                    &::before {
+                        width: 100%;
+                        opacity: 1;
+                        right: auto;
+                        left: 0;
+                    }
+
+                }
+            }
         }
     }
 
@@ -75,10 +102,11 @@
         width        : 46px;
         height       : 46px;
         border-radius: 10px;
-        opacity: 1;
+        opacity      : 1;
 
         &:hover {
-            background   : $brandColor;
+            background: $brandColor;
+
             &::before {
                 color: #fff;
             }
@@ -86,8 +114,8 @@
 
         &::before {
             font-family: "fontawesome";
-            color: #757482;
-            font-size: 40px;
+            color      : #757482;
+            font-size  : 40px;
         }
     }
 
