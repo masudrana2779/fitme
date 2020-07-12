@@ -101,7 +101,23 @@ ul {
     font-size: 16px;
     font-weight: 600;
     color: #383841;
-    font-family: "Nunito", sans-serif; }
+    font-family: "Nunito", sans-serif;
+    position: relative; }
+    .mainMenu .navbar-nav .nav-item .nav-link:before {
+      position: absolute;
+      content: attr(datatext);
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      background: #333;
+      padding: 0 10px;
+      font-size: 14px;
+      border-radius: 10px;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .mainMenu .navbar-nav .nav-item .nav-link .icon {
       display: block; }
       .mainMenu .navbar-nav .nav-item .nav-link .icon img {
@@ -1055,6 +1071,84 @@ p {
         font-size: 18px;
         line-height: 20px;
         font-weight: 400; }
+
+.popupWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .popupWrap.popUpRemove {
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+    visibility: hidden; }
+    .popupWrap.popUpRemove .popupInner {
+      opacity: 0;
+      -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      transform: translateY(-100px); }
+  .popupWrap.popup {
+    opacity: 0;
+    visibility: hidden; }
+    .popupWrap.popup .popupInner {
+      opacity: 0;
+      -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      transform: translateY(-100px); }
+  .popupWrap .popupInner {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .popupWrap .popupInner .popupContent {
+      position: relative;
+      display: inline-block; }
+      .popupWrap .popupInner .popupContent .popLogo {
+        position: absolute;
+        top: 0;
+        left: 0; }
+  .popupWrap .closePopup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    background: #72726a;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .popupWrap .closePopup:hover {
+      -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2); }
 
 .footerWrap {
   background: url(../img/4993.png) no-repeat scroll top left/cover;

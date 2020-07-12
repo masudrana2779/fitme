@@ -29,6 +29,21 @@
                 font-weight: 600;
                 color: #383841;
                 font-family: $nunito;
+                position: relative;
+                &:before {
+                    position: absolute;
+                    content: attr(datatext);
+                    bottom: 0;
+                    left: 0;
+                    color: #fff;
+                    background: #333;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    border-radius: 10px;
+                    width: 100%;
+                    opacity: 0;
+                    transition: all 0.5s;
+                }
                 .icon {
                     display: block;
                     img {

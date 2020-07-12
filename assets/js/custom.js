@@ -1,6 +1,44 @@
 $(document).ready(function () {
 
 
+    
+	function scrollTopFixed(htOp) {
+		var windowTop = $(window).scrollTop();
+		var adDcl = "fixedMenu";
+		if (windowTop > 0) {
+			if (!(htOp.hasClass(adDcl))) {
+				htOp.stop();
+				htOp.addClass(adDcl);
+			}
+		}
+		else {
+			if (htOp.hasClass(adDcl)) {
+				htOp.stop();
+				htOp.removeClass(adDcl);
+			}
+		}
+	}
+	
+	$(window).scroll(function () {
+		var htOp = $('.header');
+		scrollTopFixed(htOp);
+	});
+		
+
+    function popUpRemove() {
+        setTimeout(removeClass, 100);
+        setTimeout(addClass, 10000);
+        function removeClass() {
+            $('.popupWrap').removeClass("popup");
+        }
+        function addClass() {
+            $('.popupWrap').addClass("popUpRemove");
+        }
+        $(".closePopup").on('click', function(){
+            $('.popupWrap').addClass("popUpRemove");
+        });
+    }
+    popUpRemove();
 
     //js for bannerTextSlider
     function bannerTextSlider() {
@@ -40,7 +78,7 @@ $(document).ready(function () {
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2500,
-            arrows: true,
+            arrows: false,
             dots: true,
             // asNavFor: '.bannerTextSlider',
             responsive: [
@@ -232,5 +270,7 @@ $(document).ready(function () {
         delay: 10,
         time: 1000
     });
+
+
 
 });
