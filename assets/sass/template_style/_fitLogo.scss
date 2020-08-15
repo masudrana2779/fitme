@@ -64,6 +64,8 @@
                 font-family  : $nunito;
                 line-height  : 30px;
                 color        : #383841;
+                display: flex;
+                align-items: center;
 
                 img {
                     max-width   : 45px;
@@ -111,6 +113,9 @@ p {
                 background   : $brandColor;
                 top          : 8px;
                 left         : 0;
+            }
+            span {
+                color: $brandColor;
             }
         }
     }

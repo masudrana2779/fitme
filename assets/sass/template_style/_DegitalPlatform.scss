@@ -28,6 +28,32 @@
             .sliderImg {
                 position     : relative;
                 margin-bottom: 50px;
+                display      : inline-block;
+
+                .topImgText {
+                    position: absolute;
+                    top     : 70px;
+                    right   : 0px;
+
+                    &.r100 {
+                        right: 100px;
+                    }
+
+                    &.r-60 {
+                        right: -60px;
+                        top: auto;
+                        bottom: 100px;
+                    }
+
+                    h2 {
+                        color      : #383841;
+                        font-family: "Nunito", sans-serif;
+                        font-size  : 34px;
+                        line-height: 70px;
+                        font-weight: 700;
+                        font-style : italic;
+                    }
+                }
 
                 img {
                     display: inline-block;
@@ -118,6 +144,8 @@
                 .disBtn {
                     position: relative;
                     height  : 80px;
+                    width   : 195px;
+                    margin  : 0 auto;
 
                     a {
                         transition: all 0.5s;

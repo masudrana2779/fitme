@@ -1,16 +1,52 @@
 .header {
-    box-shadow: 0 4px 8px rgba(74, 73, 86, 0.08);
-    transition: all 0.5s;
+    box-shadow   : 0 4px 8px rgba(74, 73, 86, 0.08);
+    transition   : all 0.5s;
     border-radius: 0 0 60px 60px;
-    position: sticky;
-    top: 0;
-    z-index: 1081;
-    background: #fff;
+    position     : sticky;
+    top          : 0;
+    z-index      : 1081;
+    background   : #fff;
+
     .logo {
+        width: 120px;
+
         a {
             img {
-                max-width: 120px;
-                width: 100%;
+                max-width : 120px;
+                width     : 100%;
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    &.fixedMenu {
+        padding: 0;
+
+        .logo {
+            a img {
+                max-width: 90px;
+            }
+        }
+
+        .mainMenu .navbar-nav .nav-item {
+            margin-right: 25px;
+
+            .nav-link {
+                padding-left: 25px;
+                padding-top : 10px;
+
+                .icon {
+                    right    : auto;
+                    top      : 50%;
+                    left     : 0;
+                    transform: translate(0%, -50%);
+                    display  : flex;
+                    margin   : 0;
+
+                    img {
+                        max-width: 20px;
+                    }
+                }
             }
         }
     }
@@ -20,35 +56,49 @@
     .navbar-nav {
         .nav-item {
             margin-right: 50px;
+                transition   : all 0.5s;
+
             &:last-child {
                 margin-right: 0;
             }
+
             .nav-link {
-                text-align: center;
-                font-size: 16px;
+                text-align : center;
+                font-size  : 16px;
                 font-weight: 600;
-                color: #383841;
-                font-family: $nunito;
-                position: relative;
+                color      : #383841;
+                font-family: "Nunito", sans-serif;
+                position   : relative;
+                padding    : 30px 0 10px 0;
+                transition   : all 0.5s;
+
                 &:before {
-                    position: absolute;
-                    content: attr(datatext);
-                    bottom: 0;
-                    left: 0;
-                    color: #fff;
-                    background: #333;
-                    padding: 0 10px;
-                    font-size: 14px;
+                    position     : absolute;
+                    content      : attr(datatext);
+                    bottom       : 0;
+                    left         : 0;
+                    color        : #fff;
+                    background   : #333;
+                    padding      : 0 10px;
+                    font-size    : 14px;
                     border-radius: 10px;
-                    width: 100%;
-                    opacity: 0;
-                    transition: all 0.5s;
+                    width        : 100%;
+                    opacity      : 0;
+                    transition   : all 0.5s;
                 }
+
                 .icon {
-                    display: block;
+                    display   : block;
+                    position  : absolute;
+                    top       : 0;
+                    left      : 50%;
+                    transform : translate(-50%, 0%);
+                    transition: all 0.5s;
+
                     img {
-                        max-width: 30px;
-                        width: 100%;
+                        transition: all 0.5s;
+                        max-width : 30px;
+                        width     : 100%;
                     }
                 }
             }
@@ -58,15 +108,17 @@
 
 .loginWrap {
     a {
-        display: flex;
+        display    : flex;
         align-items: center;
-        font-size: 14px;
+        font-size  : 14px;
         font-family: $nunito;
         font-weight: 700;
+
         img {
             margin-right: 10px;
-            max-width: 20px;
-            width    : 100%;
+            max-width   : 20px;
+            width       : 100%;
+            transition  : all 0.5s;
         }
     }
 }
