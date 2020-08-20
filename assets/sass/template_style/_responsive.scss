@@ -324,7 +324,9 @@
 
     .header.fixedMenu .mainMenu {
         .loginWrap a {
-            justify-content: start;img {
+            justify-content: start;
+
+            img {
                 margin-right: 15px;
             }
         }
@@ -352,6 +354,10 @@
             justify-content: center;
             margin-bottom  : 30px;
         }
+    }
+
+    .bannerWrap {
+        padding: 50px 0;
     }
 
     .bannerRightContent .bannerVideoSlider {
@@ -417,6 +423,7 @@
 
 }
 
+
 // @media (max-width: 767px)
 
 
@@ -429,7 +436,9 @@
             max-height: 200px;
             overflow-x: hidden;
             overflow-y: scroll;
-        }.loginWrap a {
+        }
+
+        .loginWrap a {
             margin-bottom: 0;
         }
     }
