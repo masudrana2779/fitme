@@ -118,9 +118,29 @@
         }
     }
 }
+.fitTabContent {
+    margin-bottom: 100px;
+    .tab-content {
+        position: relative;
+        .tab-pane {
+            display: block;
+            transform: translateY(0px);
+            transition: all .3s linear;
+    
+            &:not(.show) {
+                opacity: 0;
+                width: 100%;
+                position: absolute;
+                visibility: hidden;
+                left: 0;
+                top: 0;
+                transform: translateY(50px);
+            }
+        }
+    }
+}
 
 .tabSliderContent {
-    margin-bottom: 100px;
 
     .physicalFitSlider {
 

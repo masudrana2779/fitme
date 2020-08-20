@@ -1,6 +1,12 @@
 $(document).ready(function () {
 
-
+    $('.fitmeFitWrap .tabMenu .nav-tabs a').on('click', function(e){
+        var tab_height = $('.fitTabContent .tab-content .sliderItem').outerHeight();
+        console.log(tab_height);
+        $('.fitTabContent .tab-content').css({
+            'height': tab_height + 'px',
+        });
+    });
     
 	function scrollTopFixed(htOp) {
 		var windowTop = $(window).scrollTop();

@@ -778,150 +778,174 @@ ul {
       height: 6px;
       opacity: 1; }
 
-.tabSliderContent {
+.fitTabContent {
   margin-bottom: 100px; }
-  .tabSliderContent .physicalFitSlider .slick-arrow {
-    width: 40px;
-    height: 30px;
-    z-index: 1;
-    top: -60px;
-    opacity: 0.5;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s; }
-    .tabSliderContent .physicalFitSlider .slick-arrow::before {
-      display: none; }
-    .tabSliderContent .physicalFitSlider .slick-arrow:hover {
-      opacity: 1; }
-  .tabSliderContent .physicalFitSlider .slick-prev {
-    background: url(../img/LeftSmallArrow.png.png) no-repeat scroll center center/14px auto;
-    left: auto;
-    right: 40px; }
-  .tabSliderContent .physicalFitSlider .slick-next {
-    background: url(../img/rightSmallArrow.png) no-repeat scroll center center/14px auto;
-    right: 0; }
-  .tabSliderContent .physicalFitSlider .sliderItem {
-    padding-top: 50px; }
-    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      background: #F6F6F6;
-      border-radius: 0 0 100px 0;
-      position: relative;
-      height: 380px;
-      z-index: 1;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
-      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner::before {
+  .fitTabContent .tab-content {
+    position: relative; }
+    .fitTabContent .tab-content .tab-pane {
+      display: block;
+      -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
+      .fitTabContent .tab-content .tab-pane:not(.show) {
+        opacity: 0;
+        width: 100%;
         position: absolute;
-        content: "";
-        top: 0;
+        visibility: hidden;
         left: 0;
-        background: -webkit-gradient(linear, left top, left bottom, from(#FCA03F), to(#FD513A));
-        background: -webkit-linear-gradient(#FCA03F, #FD513A);
-        background: -o-linear-gradient(#FCA03F, #FD513A);
-        background: linear-gradient(#FCA03F, #FD513A);
-        width: 240px;
-        height: 325px;
-        border-radius: 0 0 100px 0;
-        z-index: -1; }
-      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
-        width: 250px;
-        margin: -170px 10px 0; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg img {
-          max-width: 190px;
-          width: 100%; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.img260 {
-          margin-top: 0; }
-          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.img260 img {
-            max-width: 260px; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.mt-80 {
-          margin: -80px 20px -10px 0; }
-          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.mt-80 img {
-            max-width: 240px; }
-      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
-        max-width: 230px;
+        top: 0;
+        -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px); }
+
+.tabSliderContent .physicalFitSlider .slick-arrow {
+  width: 40px;
+  height: 30px;
+  z-index: 1;
+  top: -60px;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+  .tabSliderContent .physicalFitSlider .slick-arrow::before {
+    display: none; }
+  .tabSliderContent .physicalFitSlider .slick-arrow:hover {
+    opacity: 1; }
+
+.tabSliderContent .physicalFitSlider .slick-prev {
+  background: url(../img/LeftSmallArrow.png.png) no-repeat scroll center center/14px auto;
+  left: auto;
+  right: 40px; }
+
+.tabSliderContent .physicalFitSlider .slick-next {
+  background: url(../img/rightSmallArrow.png) no-repeat scroll center center/14px auto;
+  right: 0; }
+
+.tabSliderContent .physicalFitSlider .sliderItem {
+  padding-top: 50px; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #F6F6F6;
+    border-radius: 0 0 100px 0;
+    position: relative;
+    height: 380px;
+    z-index: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      background: -webkit-gradient(linear, left top, left bottom, from(#FCA03F), to(#FD513A));
+      background: -webkit-linear-gradient(#FCA03F, #FD513A);
+      background: -o-linear-gradient(#FCA03F, #FD513A);
+      background: linear-gradient(#FCA03F, #FD513A);
+      width: 240px;
+      height: 325px;
+      border-radius: 0 0 100px 0;
+      z-index: -1; }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+      width: 250px;
+      margin: -170px 10px 0; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg img {
+        max-width: 190px;
         width: 100%; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h3 {
-          font-size: 38px;
-          font-weight: 700;
-          font-family: "Nunito", sans-serif;
-          font-style: italic;
-          color: #FF6F00;
-          margin-bottom: 10px; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h4 {
-          font-size: 24px;
-          font-weight: 700;
-          font-family: "Nunito", sans-serif;
-          font-style: italic;
-          color: #FF6F00;
-          margin-bottom: 10px; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h5 {
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.img260 {
+        margin-top: 0; }
+        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.img260 img {
+          max-width: 260px; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.mt-80 {
+        margin: -80px 20px -10px 0; }
+        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.mt-80 img {
+          max-width: 240px; }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+      max-width: 230px;
+      width: 100%; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h3 {
+        font-size: 38px;
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #FF6F00;
+        margin-bottom: 10px; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h4 {
+        font-size: 24px;
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #FF6F00;
+        margin-bottom: 10px; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h5 {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #FF6F00; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #757482;
+        margin-bottom: 20px; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details {
+        position: absolute;
+        right: 70px;
+        bottom: 30px; }
+        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a {
+          color: #4A4956;
           font-size: 18px;
-          font-weight: 600;
-          font-family: "Nunito", sans-serif;
-          font-style: italic;
-          color: #FF6F00; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText p {
-          font-size: 20px;
-          font-weight: 600;
-          font-family: "Nunito", sans-serif;
-          font-style: italic;
-          color: #757482;
-          margin-bottom: 20px; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details {
-          position: absolute;
-          right: 70px;
-          bottom: 30px; }
-          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a {
-            color: #4A4956;
-            font-size: 18px;
-            font-family: "Poppins", sans-serif;
-            font-weight: normal;
-            display: inline-block;
-            position: relative;
+          font-family: "Poppins", sans-serif;
+          font-weight: normal;
+          display: inline-block;
+          position: relative;
+          -webkit-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
+          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 1px;
+            background: #FF6F00;
+            opacity: 0;
             -webkit-transition: all 0.5s;
             -o-transition: all 0.5s;
             transition: all 0.5s; }
-            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a::before {
-              position: absolute;
-              content: "";
-              bottom: 0;
-              right: 0;
-              width: 0;
-              height: 1px;
-              background: #FF6F00;
-              opacity: 0;
-              -webkit-transition: all 0.5s;
-              -o-transition: all 0.5s;
-              transition: all 0.5s; }
-            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a i {
-              margin-left: 10px;
-              font-style: 20px; }
-            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover {
-              color: #FF6F00; }
-              .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover::before {
-                right: auto;
-                left: 0;
-                opacity: 1;
-                width: 100%; }
-        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li {
-          font-size: 16px;
-          font-weight: 400;
-          font-family: "Nunito", sans-serif;
-          font-style: italic;
-          color: #757482; }
-          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li img {
-            max-width: 18px;
-            width: 100%;
-            opacity: 0.5;
-            margin-right: 10px;
-            display: inline-block; }
+          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a i {
+            margin-left: 10px;
+            font-style: 20px; }
+          .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover {
+            color: #FF6F00; }
+            .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .details a:hover::before {
+              right: auto;
+              left: 0;
+              opacity: 1;
+              width: 100%; }
+      .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-style: italic;
+        color: #757482; }
+        .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li img {
+          max-width: 18px;
+          width: 100%;
+          opacity: 0.5;
+          margin-right: 10px;
+          display: inline-block; }
 
 .slick-initialized .slick-slide {
   outline: none; }
