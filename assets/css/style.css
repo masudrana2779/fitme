@@ -1526,7 +1526,9 @@ p {
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h4 {
     font-size: 20px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
-    height: 320px; } }
+    height: 320px; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+    margin-top: -100px; } }
 
 @media (max-width: 767px) {
   .bannerContent {
