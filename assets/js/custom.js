@@ -140,6 +140,13 @@ $(document).ready(function () {
             dots: false,
             responsive: [
                 {
+                    breakpoint: 1050,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 2
+                    }
+                },
+                {
                     breakpoint: 768,
                     settings: {
                         arrows: false,

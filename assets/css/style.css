@@ -1452,6 +1452,9 @@ p {
     font-size: 44px;
     line-height: 60px; } }
 
+.fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+  border-radius: 0 0 100px 0; }
+
 @media (max-width: 1550px) {
   .container {
     max-width: 1400px; }
@@ -1545,6 +1548,9 @@ p {
   .DigitalContentWrap .DigitalContentText .digiTalTitle {
     font-size: 30px;
     line-height: 40px; }
+  .fitLogoWrap .fitTOP h4 {
+    font-size: 30px;
+    line-height: 40px; }
   .secTitle h4 {
     font-size: 30px;
     line-height: 40px; }
@@ -1569,12 +1575,114 @@ p {
   .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
     padding-top: 30px; }
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .imgText.round.roundTopRight {
-    right: 80px; }
+    left: 80px;
+    height: 250px;
+    width: 200px; }
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent {
     max-width: 300px; }
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent p {
     font-size: 20px;
     line-height: 40px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px; }
+  .bannerRightContent .bannerVideoSlider {
+    margin-left: 0; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg img.img300 {
+    max-width: 210px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .imgText {
+    width: 180px;
+    height: 250px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg img.img200 {
+    max-width: 130px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .imgText.round.roundTopRight {
+    height: 220px;
+    width: 180px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText {
+    top: 30px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText h2 {
+    font-size: 20px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r100 {
+    right: 20px; }
+  .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r-60 {
+    right: 145px;
+    top: 40px; }
+  .DigitalContentWrap {
+    margin-bottom: 50px; }
+  .DigitalContentWrap .DigitalContentVideo {
+    max-width: 650px; }
+  .DigitalContentWrap .DigitalContentVideo:before {
+    width: 550px;
+    height: 330px; }
+  .DigitalContentWrap .DigitalContentText .digiTalTitle {
+    font-size: 24px;
+    margin-bottom: 30px; }
+  .DigitalContentWrap .DigitalContentText p {
+    font-size: 16px;
+    line-height: 30px; }
+  .DigitalContentVideoSlider .DigitalContentSliderItem .sliderVideoImg .videoCaption p {
+    font-size: 16px;
+    line-height: 20px; }
+  .fitmeFitWrap .fitTop p {
+    font-size: 18px;
+    line-height: 40px; }
+  .fitmeFitWrap .fitTop .viewMoreLink a {
+    font-size: 20px; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
+    width: 230px;
+    height: 270px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+    width: 200px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+    height: 253px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    max-width: 210px; }
+  .clientSayContent h5 {
+    margin-bottom: 10px; }
+  .secTitle h4 {
+    font-size: 24px;
+    line-height: 36px; }
+  .clientSayContent h3 {
+    font-size: 24px;
+    line-height: 36px; }
+  .welcomeCompWrap {
+    padding: 60px 0; }
+  .fitmeAppWrap .appDetailsList li {
+    font-size: 16px;
+    line-height: 24px; }
+  .clientImg .imgInner {
+    max-width: 250px; }
+  .clientImg .imgInner .shape.shape2 {
+    max-width: 80px; }
+  .clientImg .imgInner .shape.shape1 {
+    right: -40px;
+    bottom: 0;
+    max-width: 90px; }
+  .clientImg .imgInner .shape.shape4 {
+    bottom: -15px;
+    left: -15px;
+    max-width: 80px; }
+  .clientSayContent .shpeRight {
+    max-width: 70px; }
+  .clientSayContent .sayContent .content p {
+    font-size: 16px;
+    line-height: 24px; }
+  .clientSayContent .sayContent {
+    padding-left: 45px; }
+  .clientSayContent .sayContent .comma {
+    max-width: 25px; }
+  .ourclientReviewWrap {
+    padding: 50px 0; }
+  .footerLeftContent .footerContent p {
+    font-size: 16px;
+    line-height: 24px; }
+  .footerItem .footerMenu li a {
+    font-size: 16px;
+    line-height: 24px; }
+  .footerItem .footerContact p {
+    font-size: 16px;
+    line-height: 24px; } }
 
 @media (max-width: 767px) {
   .bannerContent {
