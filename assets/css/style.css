@@ -1530,6 +1530,43 @@ p {
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
     margin-top: -100px; } }
 
+@media (max-width: 1200px) {
+  .bannerContent .bannerTitle {
+    font-size: 30px;
+    line-height: 40px; }
+  .bannerContent p {
+    font-size: 20px;
+    line-height: 30px; }
+  .fitmeDegitalPlatformWrap .topSec h2 {
+    font-size: 30px;
+    line-height: 40px; }
+  .DigitalContentWrap .DigitalContentText .digiTalTitle {
+    font-size: 30px;
+    line-height: 40px; }
+  .secTitle h4 {
+    font-size: 30px;
+    line-height: 40px; }
+  .DigitalContentWrap .DigitalContentVideo {
+    max-width: 750px; }
+  .DigitalContentWrap .DigitalContentVideo:before {
+    width: 650px;
+    height: 370px; }
+  .DigitalContentWrap .DigitalContentText p {
+    font-size: 20px;
+    line-height: 36px; }
+  .clientSayContent .sayContent .content p {
+    font-size: 20px;
+    line-height: 30px; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
+    width: 170px;
+    height: 270px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+    width: 170px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+    height: 210px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    padding-top: 30px; } }
+
 @media (max-width: 767px) {
   .bannerContent {
     margin-bottom: 30px; }
