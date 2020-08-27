@@ -1,8 +1,18 @@
 
-@media (max-width: 1680px) {
-    
+@media (max-width: 1620px) {
+    .container {
+        max-width: 1550px;
+    }
+    .bannerContent .bannerTitle {
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .fitmeDegitalPlatformWrap .topSec h2 {
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
-//  @media (max-width: 1680px)
+//  @media (max-width: 1620px)
 
 
 @media (max-width: 1550px) {
@@ -25,7 +35,7 @@
         }
 
         &.r-60 {
-            right: -15px;
+            right: 200px;
         }
     }
 

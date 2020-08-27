@@ -1442,6 +1442,16 @@ p {
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
 
+@media (max-width: 1620px) {
+  .container {
+    max-width: 1550px; }
+  .bannerContent .bannerTitle {
+    font-size: 44px;
+    line-height: 60px; }
+  .fitmeDegitalPlatformWrap .topSec h2 {
+    font-size: 44px;
+    line-height: 60px; } }
+
 @media (max-width: 1550px) {
   .bannerContent .bannerTitle {
     font-size: 36px;
@@ -1453,7 +1463,7 @@ p {
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r100 {
     right: 0px; }
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r-60 {
-    right: -15px; }
+    right: 200px; }
   .DigitalContentWrap .DigitalContentVideo {
     max-width: 900px; }
     .DigitalContentWrap .DigitalContentVideo:before {
