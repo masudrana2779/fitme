@@ -1,9 +1,11 @@
 
 @media (max-width: 1680px) {
-
+    .container {
+        max-width: 1620px;
+    }
 }
-
 //  @media (max-width: 1680px)
+
 
 @media (max-width: 1550px) {
     .bannerContent .bannerTitle {
@@ -73,7 +75,6 @@
         }
     }
 }
-
 // End of @media (max-width: 1550px) 
 
 
@@ -429,12 +430,7 @@
     }
 
 }
-
-
 // @media (max-width: 767px)
-
-
-
 
 
 @media (max-height: 420px) {

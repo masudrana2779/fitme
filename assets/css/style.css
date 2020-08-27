@@ -393,7 +393,7 @@ ul {
         right: 100px; }
       .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r-60 {
         right: 190px;
-        top: 80px; }
+        top: 100px; }
       .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText h2 {
         color: #383841;
         font-family: "Nunito", sans-serif;
@@ -1441,6 +1441,10 @@ p {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
+
+@media (max-width: 1680px) {
+  .container {
+    max-width: 1620px; } }
 
 @media (max-width: 1550px) {
   .bannerContent .bannerTitle {
