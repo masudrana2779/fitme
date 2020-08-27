@@ -65,8 +65,8 @@
         }
 
         .sliderText {
-            max-width : 200px;
-            margin-top: -80px;
+            max-width    : 200px;
+            margin-top   : -80px;
             padding-right: 20px;
 
             h3 {
@@ -75,7 +75,9 @@
 
             p {
                 font-size: 16px;
+                line-height: 26px;
             }
+
             .listTitle {
                 li {
                     font-size: 14px;
@@ -99,17 +101,67 @@
             height: 283px;
         }
     }
+
     .secTitle h4 {
-        font-size: 36px;
+        font-size  : 36px;
         line-height: 56px;
     }
+
     .clientSayContent h3 {
-        font-size: 36px;
+        font-size  : 36px;
+        line-height: 56px;
+    }
+
+    .DigitalContentWrap .DigitalContentText .digiTalTitle {
+        font-size  : 36px;
         line-height: 56px;
     }
 }
 
 // End of @media (max-width: 1550px) 
+
+
+@media (max-width: 1380px) {
+    .container {
+        max-width: 1300px;
+    }
+
+    .DigitalContentWrap .DigitalContentVideo {
+        max-width: 850px;
+    }
+
+    .DigitalContentWrap .DigitalContentVideo:before {
+        width : 750px;
+        height: 400px;
+    }
+
+    .DigitalContentVideoSlider .DigitalContentSliderItem .sliderVideoImg .playIcon img {
+        max-width: 50px;
+    }
+
+    .DigitalContentVideoSlider .DigitalContentSliderItem .sliderVideoImg .videoCaption {
+        padding: 0 0 20px 40px;
+    }
+
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+        max-width: 180px;
+    }
+
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+        width : 200px;
+    }
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+        height: 253px;
+    }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h4 {
+        font-size: 20px;
+    }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
+        height: 320px;
+    }
+}
+
+// End of @media (max-width: 1380px) 
 
 
 @media (max-width: 767px) {
