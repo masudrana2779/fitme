@@ -172,6 +172,10 @@
 
 
 @media (max-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+
     .bannerContent .bannerTitle {
         font-size  : 30px;
         line-height: 40px;
@@ -220,23 +224,29 @@
         width : 170px;
         height: 270px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
         width: 170px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
         height: 210px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
         padding-top: 30px;
     }
+
     .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .imgText.round.roundTopRight {
         right: 80px;
     }
+
     .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent {
         max-width: 300px;
     }
+
     .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent p {
-        font-size: 20px;
+        font-size  : 20px;
         line-height: 40px;
     }
 }

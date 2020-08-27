@@ -1531,6 +1531,8 @@ p {
     margin-top: -100px; } }
 
 @media (max-width: 1200px) {
+  .container {
+    max-width: 1170px; }
   .bannerContent .bannerTitle {
     font-size: 30px;
     line-height: 40px; }
