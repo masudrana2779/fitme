@@ -392,9 +392,9 @@ ul {
       .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r100 {
         right: 100px; }
       .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r-60 {
-        right: -60px;
+        right: 150px;
         top: auto;
-        bottom: 100px; }
+        bottom: 80px; }
       .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText h2 {
         color: #383841;
         font-family: "Nunito", sans-serif;
