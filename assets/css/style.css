@@ -1453,6 +1453,8 @@ p {
     line-height: 60px; } }
 
 @media (max-width: 1550px) {
+  .container {
+    max-width: 1400px; }
   .bannerContent .bannerTitle {
     font-size: 36px;
     line-height: 48px; }
@@ -1470,22 +1472,34 @@ p {
       width: 780px;
       height: 450px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
-    width: 220px;
-    height: 300px; }
+    width: 200px;
+    height: 280px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
     width: 250px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
-    max-width: 210px; }
+    max-width: 200px;
+    margin-top: -80px;
+    padding-right: 20px; }
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText h3 {
       font-size: 28px; }
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText p {
-      font-size: 18px; }
+      font-size: 16px; }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText .listTitle li {
+      font-size: 14px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    margin-top: 0; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg.mt-80 img {
     max-width: 204px; }
   .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
     width: 220px; }
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
-      height: 283px; } }
+      height: 283px; }
+  .secTitle h4 {
+    font-size: 36px;
+    line-height: 56px; }
+  .clientSayContent h3 {
+    font-size: 36px;
+    line-height: 56px; } }
 
 @media (max-width: 767px) {
   .bannerContent {
