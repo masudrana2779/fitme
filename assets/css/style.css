@@ -68,7 +68,7 @@ ul {
 
 /* ======================================          Global style                 ==================================== */
 .container {
-  max-width: 1670px; }
+  max-width: 1620px; }
 
 .mfp-bg {
   z-index: 1089; }
@@ -1441,10 +1441,6 @@ p {
       -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
       transform: scale(1.2); }
-
-@media (max-width: 1680px) {
-  .container {
-    max-width: 1620px; } }
 
 @media (max-width: 1550px) {
   .bannerContent .bannerTitle {
