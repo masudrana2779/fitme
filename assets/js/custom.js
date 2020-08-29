@@ -232,7 +232,7 @@ $(document).ready(function () {
             autoplay: true,
             autoplaySpeed: 3000,
             speed: 1500,
-            arrows: true,
+            arrows: false,
             dots: false,
             focusOnSelect: true,
             responsive: [

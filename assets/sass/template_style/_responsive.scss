@@ -505,17 +505,65 @@
     .bannerWrap {
         padding: 50px 0;
     }
+
     .fitmeDegitalPlatformWrap .topSec h2 {
         margin-bottom: 0;
     }
+
     .fitmeDegitalPlatformSlider {
         justify-content: center;
     }
+
     .DigitalContentWrap .DigitalContentVideo {
         max-width: 450px;
     }
+
     .DigitalContentWrap .DigitalContentVideo:before {
         width: 320px;
+    }
+
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
+        width: 160px;
+    }
+
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+        max-width: 170px;
+    }
+
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+        max-width    : 200px;
+        padding-right: 0;
+    }
+
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+        width: 140px;
+    }
+
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+        height: 170px;
+    }
+
+    .dirMobile {
+        flex-direction: column-reverse;
+    }
+
+    .welcomeCompWrap .welcomeTextContent {
+        padding-left : 0;
+        margin-bottom: 80px;
+    }
+
+    .fitAppTextContent {
+        margin-bottom: 50px;
+    }
+    .footerLeftContent {
+        margin-bottom: 50px;
+    }
+    .footerLeftContent .footerContent p {
+        max-width: 100%;
+    }
+    .welcomeCompWrap .welcomeCompImg {
+        margin: 0;
+        text-align: center;
     }
 }
 
