@@ -443,16 +443,83 @@
     .fitmeAppWrap .fitAppTextContent .secTitle {
         margin-bottom: 20px;
     }
+
     .bannerContent p {
         margin-bottom: 15px;
     }
+
     .bannerContent h6 {
-        font-size: 24px;
+        font-size  : 24px;
         line-height: 30px;
     }
 }
 
 // End of @media (max-width: 1024px) 
+
+
+@media (max-width: 768px) {
+
+
+    .header.fixedMenu .mainMenu {
+        .loginWrap a {
+            justify-content: start;
+
+            img {
+                margin-right: 15px;
+            }
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            padding-left: 35px;
+            text-align  : left
+        }
+    }
+
+    .mainMenu {
+
+        .navbar-nav {
+            border-top : 1px solid #ccc;
+            margin-top : 20px !important;
+            padding-top: 10px;
+
+            .nav-item {
+                margin-bottom: 20px;
+                margin-right : 0;
+            }
+        }
+
+        .loginWrap a {
+            justify-content: center;
+            margin-bottom  : 30px;
+        }
+    }
+
+    .bannerContent {
+        margin-bottom: 30px;
+
+        p br {
+            display: none;
+        }
+    }
+
+    .bannerWrap {
+        padding: 50px 0;
+    }
+    .fitmeDegitalPlatformWrap .topSec h2 {
+        margin-bottom: 0;
+    }
+    .fitmeDegitalPlatformSlider {
+        justify-content: center;
+    }
+    .DigitalContentWrap .DigitalContentVideo {
+        max-width: 450px;
+    }
+    .DigitalContentWrap .DigitalContentVideo:before {
+        width: 320px;
+    }
+}
+
+// End of @media (max-width: 768px) 
 
 
 @media (max-width: 767px) {
@@ -704,40 +771,6 @@
 
         .navbar-toggler {
             outline: none;
-        }
-    }
-
-    .header.fixedMenu .mainMenu {
-        .loginWrap a {
-            justify-content: start;
-
-            img {
-                margin-right: 15px;
-            }
-        }
-
-        .navbar-nav .nav-item .nav-link {
-            padding-left: 35px;
-            text-align  : left
-        }
-    }
-
-    .mainMenu {
-
-        .navbar-nav {
-            border-top : 1px solid #ccc;
-            margin-top : 20px !important;
-            padding-top: 10px;
-
-            .nav-item {
-                margin-bottom: 20px;
-                margin-right : 0;
-            }
-        }
-
-        .loginWrap a {
-            justify-content: center;
-            margin-bottom  : 30px;
         }
     }
 
