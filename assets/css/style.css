@@ -1854,7 +1854,8 @@ p {
       position: absolute;
       left: 0; }
   .clientImg {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    text-align: center; }
   .clientImg .imgInner .shape.shape1 {
     right: -20px;
     bottom: -20px; }
@@ -1948,13 +1949,13 @@ p {
   br {
     display: none; }
   .bannerContent .bannerTitle br {
-    display: block; } }
+    display: block; }
+  .DigitalContentWrap .DigitalContentVideo {
+    max-width: 100%; } }
 
 @media (max-width: 640px) {
   .DigitalContentWrap .DigitalContentText p br {
     display: none; }
-  .DigitalContentWrap .DigitalContentVideo {
-    max-width: 100%; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
     margin-top: 0;
     margin-bottom: 50px; } }

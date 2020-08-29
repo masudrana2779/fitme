@@ -729,13 +729,14 @@
 
     .clientImg {
         margin-bottom: 80px;
+        text-align: center;
     }
 
     .clientImg .imgInner .shape.shape1 {
         right : -20px;
         bottom: -20px;
 
-        img {
+        img { 
             max-width: 80px;
         }
     }
@@ -892,6 +893,9 @@
     .bannerContent .bannerTitle br {
         display: block;
     }
+    .DigitalContentWrap .DigitalContentVideo {
+        max-width: 100%;
+    }
 
 }
 
@@ -901,9 +905,6 @@
 @media (max-width:640px) {
     .DigitalContentWrap .DigitalContentText p br {
         display: none;
-    }
-    .DigitalContentWrap .DigitalContentVideo {
-        max-width: 100%;
     }
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
         margin-top: 0;
