@@ -658,6 +658,8 @@ ul {
     background: -webkit-linear-gradient(rgba(134, 54, 255, 0.2), rgba(151, 27, 72, 0.8));
     background: -o-linear-gradient(rgba(134, 54, 255, 0.2), rgba(151, 27, 72, 0.8));
     background: linear-gradient(rgba(134, 54, 255, 0.2), rgba(151, 27, 72, 0.8)); }
+  .DigitalContentVideoSlider .DigitalContentSliderItem .sliderVideoImg img {
+    width: 100%; }
   .DigitalContentVideoSlider .DigitalContentSliderItem .sliderVideoImg .playIcon {
     position: absolute;
     top: 0;
@@ -1942,7 +1944,15 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  br {
+    display: none; } }
+
+@media (max-width: 640px) {
+  .DigitalContentWrap .DigitalContentText p br {
+    display: none; }
+  .DigitalContentWrap .DigitalContentVideo {
+    max-width: 100%; } }
 
 @media (max-height: 420px) {
   .mainMenu .navbar-nav {

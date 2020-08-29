@@ -886,10 +886,29 @@
             flex-direction: column-reverse;
         }
     }
+    br {
+        display: none;
+    }
 
 }
 
 // @media (max-width: 767px)
+
+
+@media (max-width:640px) {
+    .DigitalContentWrap .DigitalContentText p br {
+        display: none;
+    }
+    .DigitalContentWrap .DigitalContentVideo {
+        max-width: 100%;
+    }
+    // .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    //     margin-top: 0;
+    //     margin-bottom: 50px;
+    // }
+}
+
+// @media (max-width: 640px)
 
 
 @media (max-height: 420px) {
