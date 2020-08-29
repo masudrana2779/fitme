@@ -307,99 +307,141 @@
         font-size  : 16px;
         line-height: 20px;
     }
+
     .fitmeFitWrap .fitTop p {
-        font-size: 18px;
+        font-size  : 18px;
         line-height: 40px;
     }
+
     .fitmeFitWrap .fitTop .viewMoreLink a {
         font-size: 20px;
     }
+
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
-        width: 230px;
+        width : 230px;
         height: 270px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
         width: 200px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
         height: 253px;
     }
+
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
         max-width: 210px;
     }
+
     .clientSayContent h5 {
         margin-bottom: 10px;
     }
+
     .secTitle h4 {
-        font-size: 24px;
+        font-size  : 24px;
         line-height: 36px;
     }
+
     .clientSayContent h3 {
-        font-size: 24px;
+        font-size  : 24px;
         line-height: 36px;
     }
+
     .welcomeCompWrap {
         padding: 60px 0;
     }
-    .fitmeAppWrap .appDetailsList li {
-        font-size: 16px;
-        line-height: 24px;
+
+    .fitmeAppWrap .appDetailsList {
+        margin-bottom: 30px;
     }
+
+    .fitmeAppWrap .appDetailsList li {
+        font-size    : 16px;
+        line-height  : 24px;
+        margin-bottom: 20px;
+    }
+
+    .fitmeAppWrap .downloadLink a {
+        width       : 150px;
+        height      : 40px;
+        margin-right: 25px;
+        font-size   : 14px;
+    }
+
     .clientImg .imgInner {
         max-width: 250px;
     }
+
     .clientImg .imgInner .shape.shape2 {
         max-width: 80px;
     }
+
     .clientImg .imgInner .shape.shape1 {
-        right: -40px;
-        bottom: 0;
+        right    : -40px;
+        bottom   : 0;
         max-width: 90px;
     }
+
     .clientImg .imgInner .shape.shape4 {
-        bottom: -15px;
-        left: -15px;
+        bottom   : -15px;
+        left     : -15px;
         max-width: 80px;
     }
+
     .clientSayContent .shpeRight {
         max-width: 70px;
     }
+
     .clientSayContent .sayContent .content p {
-        font-size: 16px;
+        font-size  : 16px;
         line-height: 24px;
     }
+
     .clientSayContent .sayContent {
         padding-left: 45px;
     }
+
     .clientSayContent .sayContent .comma {
         max-width: 25px;
     }
+
     .ourclientReviewWrap {
         padding: 50px 0;
     }
+
     .footerLeftContent .footerContent p {
-        font-size: 16px;
+        font-size  : 16px;
         line-height: 24px;
     }
+
     .footerItem .footerMenu li a {
-        font-size: 16px;
+        font-size  : 16px;
         line-height: 24px;
     }
+
     .footerItem .footerContact p {
-        font-size: 16px;
+        font-size  : 16px;
         line-height: 24px;
     }
+
     .bannerContent .bannerTitle,
     .fitmeDegitalPlatformWrap .topSec h2 {
-        font-size: 28px;
+        font-size  : 28px;
         line-height: 30px;
     }
+
     .bannerSliderVideo .videoContent {
         right: 170px;
     }
+
     .bannerSliderVideo .videoContent .videoPara {
-        font-size: 16px;
+        font-size  : 16px;
         line-height: 20px;
+    }
+
+    .fitmeAppWrap .fitAppTextContent .secTitle {
+        margin-bottom: 20px;
     }
 }
 

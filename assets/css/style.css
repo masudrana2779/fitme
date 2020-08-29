@@ -1633,9 +1633,17 @@ p {
     line-height: 36px; }
   .welcomeCompWrap {
     padding: 60px 0; }
+  .fitmeAppWrap .appDetailsList {
+    margin-bottom: 30px; }
   .fitmeAppWrap .appDetailsList li {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin-bottom: 20px; }
+  .fitmeAppWrap .downloadLink a {
+    width: 150px;
+    height: 40px;
+    margin-right: 25px;
+    font-size: 14px; }
   .clientImg .imgInner {
     max-width: 250px; }
   .clientImg .imgInner .shape.shape2 {
@@ -1676,7 +1684,9 @@ p {
     right: 170px; }
   .bannerSliderVideo .videoContent .videoPara {
     font-size: 16px;
-    line-height: 20px; } }
+    line-height: 20px; }
+  .fitmeAppWrap .fitAppTextContent .secTitle {
+    margin-bottom: 20px; } }
 
 @media (max-width: 767px) {
   .bannerContent {
