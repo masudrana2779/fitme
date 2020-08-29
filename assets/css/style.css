@@ -1686,7 +1686,12 @@ p {
     font-size: 16px;
     line-height: 20px; }
   .fitmeAppWrap .fitAppTextContent .secTitle {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .bannerContent p {
+    margin-bottom: 15px; }
+  .bannerContent h6 {
+    font-size: 24px;
+    line-height: 30px; } }
 
 @media (max-width: 767px) {
   .bannerContent {
