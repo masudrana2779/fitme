@@ -1952,7 +1952,10 @@ p {
   .DigitalContentWrap .DigitalContentText p br {
     display: none; }
   .DigitalContentWrap .DigitalContentVideo {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    margin-top: 0;
+    margin-bottom: 50px; } }
 
 @media (max-height: 420px) {
   .mainMenu .navbar-nav {
