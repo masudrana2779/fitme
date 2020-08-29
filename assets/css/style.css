@@ -1445,9 +1445,7 @@ p {
 @media (max-width: 1620px) {
   .container {
     max-width: 1550px; }
-  .bannerContent .bannerTitle {
-    font-size: 44px;
-    line-height: 60px; }
+  .bannerContent .bannerTitle,
   .fitmeDegitalPlatformWrap .topSec h2 {
     font-size: 44px;
     line-height: 60px; } }
@@ -1458,9 +1456,6 @@ p {
 @media (max-width: 1550px) {
   .container {
     max-width: 1400px; }
-  .bannerContent .bannerTitle {
-    font-size: 36px;
-    line-height: 48px; }
   .degitalPlatSliderWrap {
     padding: 0 30px; }
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText h2 {
@@ -1498,12 +1493,9 @@ p {
     width: 220px; }
     .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
       height: 283px; }
-  .secTitle h4 {
-    font-size: 36px;
-    line-height: 56px; }
-  .clientSayContent h3 {
-    font-size: 36px;
-    line-height: 56px; }
+  .bannerContent .bannerTitle,
+  .secTitle h4,
+  .clientSayContent h3,
   .DigitalContentWrap .DigitalContentText .digiTalTitle {
     font-size: 36px;
     line-height: 56px; } }
@@ -1536,24 +1528,17 @@ p {
 @media (max-width: 1200px) {
   .container {
     max-width: 1170px; }
-  .bannerContent .bannerTitle {
+  .bannerContent .bannerTitle,
+  .secTitle h4,
+  .clientSayContent h3,
+  .DigitalContentWrap .DigitalContentText .digiTalTitle,
+  .fitmeDegitalPlatformWrap .topSec h2,
+  .fitLogoWrap .fitTOP h4 {
     font-size: 30px;
     line-height: 40px; }
   .bannerContent p {
     font-size: 20px;
     line-height: 30px; }
-  .fitmeDegitalPlatformWrap .topSec h2 {
-    font-size: 30px;
-    line-height: 40px; }
-  .DigitalContentWrap .DigitalContentText .digiTalTitle {
-    font-size: 30px;
-    line-height: 40px; }
-  .fitLogoWrap .fitTOP h4 {
-    font-size: 30px;
-    line-height: 40px; }
-  .secTitle h4 {
-    font-size: 30px;
-    line-height: 40px; }
   .DigitalContentWrap .DigitalContentVideo {
     max-width: 750px; }
   .DigitalContentWrap .DigitalContentVideo:before {
@@ -1682,7 +1667,16 @@ p {
     line-height: 24px; }
   .footerItem .footerContact p {
     font-size: 16px;
-    line-height: 24px; } }
+    line-height: 24px; }
+  .bannerContent .bannerTitle,
+  .fitmeDegitalPlatformWrap .topSec h2 {
+    font-size: 28px;
+    line-height: 30px; }
+  .bannerSliderVideo .videoContent {
+    right: 170px; }
+  .bannerSliderVideo .videoContent .videoPara {
+    font-size: 16px;
+    line-height: 20px; } }
 
 @media (max-width: 767px) {
   .bannerContent {

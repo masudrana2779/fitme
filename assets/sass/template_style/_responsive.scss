@@ -3,11 +3,7 @@
         max-width: 1550px;
     }
 
-    .bannerContent .bannerTitle {
-        font-size  : 44px;
-        line-height: 60px;
-    }
-
+    .bannerContent .bannerTitle,
     .fitmeDegitalPlatformWrap .topSec h2 {
         font-size  : 44px;
         line-height: 60px;
@@ -25,11 +21,6 @@
 @media (max-width: 1550px) {
     .container {
         max-width: 1400px;
-    }
-
-    .bannerContent .bannerTitle {
-        font-size  : 36px;
-        line-height: 48px;
     }
 
     .degitalPlatSliderWrap {
@@ -107,16 +98,10 @@
         }
     }
 
-    .secTitle h4 {
-        font-size  : 36px;
-        line-height: 56px;
-    }
 
-    .clientSayContent h3 {
-        font-size  : 36px;
-        line-height: 56px;
-    }
-
+    .bannerContent .bannerTitle,
+    .secTitle h4,
+    .clientSayContent h3,
     .DigitalContentWrap .DigitalContentText .digiTalTitle {
         font-size  : 36px;
         line-height: 56px;
@@ -181,7 +166,12 @@
         max-width: 1170px;
     }
 
-    .bannerContent .bannerTitle {
+    .bannerContent .bannerTitle,
+    .secTitle h4,
+    .clientSayContent h3,
+    .DigitalContentWrap .DigitalContentText .digiTalTitle,
+    .fitmeDegitalPlatformWrap .topSec h2,
+    .fitLogoWrap .fitTOP h4 {
         font-size  : 30px;
         line-height: 40px;
     }
@@ -189,26 +179,6 @@
     .bannerContent p {
         font-size  : 20px;
         line-height: 30px;
-    }
-
-    .fitmeDegitalPlatformWrap .topSec h2 {
-        font-size  : 30px;
-        line-height: 40px;
-    }
-
-    .DigitalContentWrap .DigitalContentText .digiTalTitle {
-        font-size  : 30px;
-        line-height: 40px;
-    }
-
-    .fitLogoWrap .fitTOP h4 {
-        font-size  : 30px;
-        line-height: 40px;
-    }
-
-    .secTitle h4 {
-        font-size  : 30px;
-        line-height: 40px;
     }
 
     .DigitalContentWrap .DigitalContentVideo {
@@ -418,6 +388,18 @@
     .footerItem .footerContact p {
         font-size: 16px;
         line-height: 24px;
+    }
+    .bannerContent .bannerTitle,
+    .fitmeDegitalPlatformWrap .topSec h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .bannerSliderVideo .videoContent {
+        right: 170px;
+    }
+    .bannerSliderVideo .videoContent .videoPara {
+        font-size: 16px;
+        line-height: 20px;
     }
 }
 
