@@ -1951,7 +1951,11 @@ p {
   .bannerContent .bannerTitle br {
     display: block; }
   .DigitalContentWrap .DigitalContentVideo {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .welcomeCompWrap .welcomeTextContent .welList li {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
 
 @media (max-width: 640px) {
   .DigitalContentWrap .DigitalContentText p br {
