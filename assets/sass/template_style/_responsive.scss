@@ -601,6 +601,8 @@
     .bannerSliderVideo {
         .videoContent {
             max-width: 270px;
+            right: auto;
+            left: 30px;
 
             .videoPara {
                 font-size: 18px;
@@ -679,9 +681,13 @@
     }
 
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
-        margin-bottom: 60px;
+        margin-bottom: 100px;
         margin-top   : 0;
         height       : 300px;
+    }
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
+        width: 250px;
+        height: 280px;
     }
 
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
@@ -693,6 +699,10 @@
     .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
         padding  : 0 30px;
         max-width: 100%;
+    }
+
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+        height: 100%;
     }
 
     .fitLogoWrap .fitTOP h4 {
@@ -715,16 +725,6 @@
 
     .fitAppTextContent {
         margin-bottom: 60px;
-    }
-
-    .welcomeCompWrap .welcomeTextContent .welList li {
-        padding-left: 70px;
-        position    : relative;
-
-        img {
-            position: absolute;
-            left    : 0;
-        }
     }
 
     .clientImg {
@@ -916,6 +916,20 @@
 }
 
 // @media (max-width: 640px)
+
+
+@media (max-width: 420px) {
+    .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+        margin-bottom: 0;
+        margin-top: 0;
+        height: 320px;
+    }
+    .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+        max-width: 100%;
+    }
+}
+
+// @media (max-width: 420px)
 
 
 @media (max-height: 420px) {

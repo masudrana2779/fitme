@@ -1780,7 +1780,9 @@ p {
     .bannerContent h6 {
       font-size: 24px; }
   .bannerSliderVideo .videoContent {
-    max-width: 270px; }
+    max-width: 270px;
+    right: auto;
+    left: 30px; }
     .bannerSliderVideo .videoContent .videoPara {
       font-size: 18px; }
   .fitmeDegitalPlatformWrap .topSec h2 {
@@ -1825,9 +1827,12 @@ p {
   .fitmeAppWrap .downloadLink a {
     margin-right: 20px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     margin-top: 0;
     height: 300px; }
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner:before {
+    width: 250px;
+    height: 280px; }
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner {
     display: block;
     height: auto;
@@ -1835,6 +1840,8 @@ p {
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
     padding: 0 30px;
     max-width: 100%; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg::before {
+    height: 100%; }
   .fitLogoWrap .fitTOP h4 {
     font-size: 30px;
     line-height: 44px;
@@ -1847,12 +1854,6 @@ p {
     padding: 50px 0; }
   .fitAppTextContent {
     margin-bottom: 60px; }
-  .welcomeCompWrap .welcomeTextContent .welList li {
-    padding-left: 70px;
-    position: relative; }
-    .welcomeCompWrap .welcomeTextContent .welList li img {
-      position: absolute;
-      left: 0; }
   .clientImg {
     margin-bottom: 80px;
     text-align: center; }
@@ -1963,6 +1964,14 @@ p {
   .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
     margin-top: 0;
     margin-bottom: 50px; } }
+
+@media (max-width: 420px) {
+  .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 320px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    max-width: 100%; } }
 
 @media (max-height: 420px) {
   .mainMenu .navbar-nav {
