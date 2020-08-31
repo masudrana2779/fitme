@@ -1,5 +1,35 @@
 $(document).ready(function () {
 
+    
+        // hide .go_to_top first
+        $(".go_to_top").hide();
+        // fade in .go_to_topp
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('.go_to_top').fadeIn();
+            }
+            else {
+                $('.go_to_top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+
+        function go_to_top() {
+            //js for scroll to section content
+            $('.go_to_top a[href^="#"],.appointment a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 80
+                    }, 2000);
+                }
+            });
+        }
+
+        go_to_top();
+        
+
     $('.fitmeFitWrap .tabMenu .nav-tabs a').on('click', function(e){
         var tab_height = $('.fitTabContent .tab-content .sliderItem').outerHeight();
         console.log(tab_height);

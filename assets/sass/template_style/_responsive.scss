@@ -932,6 +932,70 @@
 // @media (max-width: 420px)
 
 
+@media (max-width: 375px) {
+    .fitTabs .tabMenu .nav .nav-item {
+        font-size: 16px;
+    }
+    .secTitle h4,
+    .clientSayContent h3 {
+        font-size: 28px;
+        line-height: 44px;
+    }
+    .clientSayContent .sayContent .content p,
+    .bannerContent p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .bannerContent .bannerTitle {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .bannerContent h6 {
+        font-size: 20px;
+    }
+    .bannerSliderVideo .videoContent .videoLogo img {
+        max-width: 80px;
+    }
+    .bannerSliderVideo .videoContent .videoPara {
+        font-size: 16px;
+        padding-right: 50px;
+    }
+    .bannerSliderVideo .videoContent .videoLogo {
+        margin-bottom: 10px;
+    }
+    .fitmeDegitalPlatformWrap .topSec h2 {
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+    .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent p {
+        font-size: 16px;
+        line-height: 26px;
+    }.DigitalContentWrap .DigitalContentText .digiTalTitle,.fitLogoWrap .fitTOP h4 {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .secTitle h4, .clientSayContent h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+}
+
+// @media (max-width: 375px)
+
+
+@media (max-width: 365px) {
+    .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderImg .topImgText.r100 {
+        right: 0;
+    }
+    .fitTabs .tabMenu .nav .nav-item {
+        padding: 0 10px;
+    }
+}
+
+// @media (max-width: 365px)
+
+
 @media (max-height: 420px) {
     .mainMenu {
         .navbar-nav {
