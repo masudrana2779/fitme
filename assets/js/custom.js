@@ -188,6 +188,7 @@ $(document).ready(function () {
                     settings: {
                         arrows: false,
                         slidesToShow: 1,
+                        adaptiveHeight: true
                     }
                 },
                 {
