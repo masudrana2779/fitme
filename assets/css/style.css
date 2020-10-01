@@ -2015,11 +2015,16 @@ p {
   .fitmeDegitalPlatformSlider .fitmeDegitalPlatformSliderItem .sliderInner .sliderContent p {
     font-size: 20px;
     line-height: 36px; }
-  .tabSliderContent {
-    margin-bottom: 50px; }
   .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliedrImg {
     width: 250px;
-    height: auto; }
+    height: auto;
+    margin-top: 0; }
+  .tabSliderContent .physicalFitSlider .sliderItem {
+    padding-top: 0; }
+  .fitLogoWrap {
+    margin-top: 50px; }
+  .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText {
+    margin-bottom: 0; }
   .fitmeFitDoctorWrap .tabSliderContent .physicalFitSlider .sliderItem .sliderItemInner .sliderText p {
     max-height: initial;
     min-height: initial;
